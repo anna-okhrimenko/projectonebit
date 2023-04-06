@@ -165,7 +165,7 @@ gulp.task('clean', function () {
 
 // ЗАДАЧА: Перемещение шрифтов
 gulp.task('copyFonts', function() {
-    return gulp.src(dirs.source + '/assets/fonts/**/*.{woff,woff2,ttf,otf,eot,svg}')
+    return gulp.src(dirs.source + '/assets/fonts/**/*.{woff,woff2,ttf,otf,eot,svg,css}')
     .pipe(gulp.dest(dirs.build + '/assets/fonts'));
 });
 
@@ -178,7 +178,7 @@ gulp.task('copyCSS', function() {
 // ЗАДАЧА: Перемещение скриптов
 gulp.task('copyJS', function() {
     return gulp.src(dirs.source + '/assets/js/**/*.js')
-    .pipe(gulp.dest('build' + '/assets/js'));
+    .pipe(gulp.dest(dirs.build + '/assets/js'));
 });
 
 // ЗАДАЧА: Сборка PHP
