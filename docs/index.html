@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#188de7">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <title>Сборка Markup</title>
-    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -16,12 +16,21 @@
         <div class="header-container">
             <div class="header-logo">
                 <a href="index.html"><img src="../assets/img/header-logo.png" alt=""></a>
-
+                <ul class="header-logo_list">
+                    <li class="header-logo_list-link">
+                        <a href="#">Україна</a>
+                        <ul class="header-logo_sublist">
+                            <li class="header-logo_list-sublink"><a href="">Польща</a></li>
+                            <li class="header-logo_list-sublink"><a href="">Чехія</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="header-nav">
                 <ul class="header-nav_list">
                     <li class="header-nav_list-link">
                         <a href="#">послуги</a>
+                        <span><img src="assets/img/down-arrow.svg"></span>
                         <ul class="header-nav_sublist">
                             <li class="header-nav_list-sublink"><a href="#">перекази по Україні</a></li>
                             <li class="header-nav_list-sublink"><a href="#">міжнародні перекази</a></li>
@@ -38,6 +47,7 @@
                     </li>
                     <li class="header-nav_list-link">
                         <a href="#">клієнтам</a>
+                        <span><img src="assets/img/down-arrow.svg"></span>
                         <ul class="header-nav_sublist">
                             <li class="header-nav_list-sublink"><a href="#">відгуки</a></li>
                             <li class="header-nav_list-sublink"><a href="#">часті питання</a></li>
@@ -45,12 +55,17 @@
                         </ul>
                     </li>
                 </ul>
-
-
-
-
             </div>
-            <div>
+            <div class="header-btn_block">
+                <ul class="header-btn_list">
+                    <li class="header-btn_list-link">
+                        <a href="#">ua</a>
+                        <ul class="header-btn_sublist">
+                            <li class="header-btn_list-sublink"><a href="">pl</a></li>
+                            <li class="header-btn_list-sublink"><a href="">en</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 <button class="btn btn-secondary">реєстрація</button>
             </div>
         </div>
