@@ -1,11 +1,13 @@
 header{
+
 	.header-container {
 		max-width: 1920px;
-		padding: 20px 50px;
+		padding: 47px 50px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		margin-bottom: 41px;
 	}
 
 	ul li {
@@ -35,6 +37,7 @@ header{
 					width: 12px;
 					height: 12px;
 					margin-left: 8px;
+					
 				}
 	
 				&:hover {
@@ -48,7 +51,7 @@ header{
 				font-weight: 500;
 				font-size: 18px;
 				line-height: 23px;
-				color: $titles-color;
+				color: $body-text;
 				text-decoration: none;
 	
 				&:hover {
@@ -114,6 +117,7 @@ header{
 		top: 35px;
 		left: 0px;
 		display: none;
+		z-index: 1;
 
 		.header-nav_list-sublink,
 		.header-logo_list-sublink,
@@ -161,7 +165,7 @@ header{
 				font-weight: 500;
 				font-size: 18px;
 				line-height: 23px;
-				color: $titles-color;
+				color: $body-text;
 				text-decoration: none;
 		
 				&:hover {
@@ -174,4 +178,6 @@ header{
 			}
 		}
 	}
+
+	
 }

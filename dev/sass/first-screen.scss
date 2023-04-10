@@ -1,3 +1,90 @@
-h1 {
-    color: blue;
+.slider {
+    &-item {
+        display: flex !important;
+        justify-content: space-between;
+    
+        &_info {
+            max-width: 705px;
+            &-title {
+                font-weight: 500;
+                font-size: 58px;
+                line-height: 70px;
+                color: $titles-color;
+                margin-bottom: 20px;
+            }
+            &-features {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 60px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                
+                .features-block {
+                    display: flex;
+                    align-items: center;
+                    max-width: 338px;
+                    margin-bottom: 30px;
+
+                    &:nth-child(odd) {
+                        margin-right: 28px;
+                    }
+    
+                }
+            }
+
+            &-top {
+                display: flex;
+                & a {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: $accent-color;
+                    margin-right: 9px;
+                    text-decoration: none;
+                }
+            }
+        }
+    
+        &-img {
+            max-width: 665px;
+            border-radius: 20px;
+            margin-bottom: 29px;
+    
+            & img {
+                width: 100%;
+            }
+        }
+    }
+
+    .slick-dots {
+		display: flex;
+		gap: 20px;
+        justify-content: flex-end;
+
+        li {
+            background: $titles-color;
+            border-radius: 50%;
+            height: 8px;
+            width: 8px;
+            transition: .5s;
+        }
+
+        li.slick-active {
+            width: 160px;
+            background: $accent-color;
+            border-radius: 55px;
+
+        }
+
+        & button {
+            color: transparent;
+            background: transparent;
+            border: none;
+
+        }
+
+	}
+
 }
