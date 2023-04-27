@@ -272,6 +272,139 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
 .slider-item-img img {
   width: 100%;
 }
+.slider-item .currency {
+  max-width: 540px;
+  padding: 40px;
+  box-shadow: 0px 4px 79px rgba(93, 209, 22, 0.2);
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.slider-item .currency::before {
+  content: "";
+  background: rgba(141, 243, 30, 0.4);
+  filter: blur(250px);
+  width: 760px;
+}
+.slider-item .currency .form-block_give,
+.slider-item .currency .form-block_getit {
+  display: flex;
+  padding: 36px;
+  background-color: #10100E;
+  border: 1px solid #4F4F4F;
+  border-radius: 12px;
+  color: #F7FFEE;
+}
+.slider-item .currency .form-block_give input[type=number],
+.slider-item .currency .form-block_getit input[type=number] {
+  padding: 16px;
+  background-color: #10100E;
+  color: #F7FFEE;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  border: none;
+  -moz-appearance: textfield;
+}
+.slider-item .currency .form-block_give input[type=number]::-webkit-outer-spin-button, .slider-item .currency .form-block_give input[type=number]::-webkit-inner-spin-button,
+.slider-item .currency .form-block_getit input[type=number]::-webkit-outer-spin-button,
+.slider-item .currency .form-block_getit input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.slider-item .currency .form-block_give input[type=number]:focus-visible,
+.slider-item .currency .form-block_getit input[type=number]:focus-visible {
+  outline: none;
+}
+.slider-item .currency .form-block_give .dropdown,
+.slider-item .currency .form-block_getit .dropdown {
+  min-width: 200px;
+  position: relative;
+}
+.slider-item .currency .form-block_give .dropdown .select,
+.slider-item .currency .form-block_getit .dropdown .select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px;
+  background-color: #10100E;
+  border: 1px solid #4F4F4F;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.slider-item .currency .form-block_give .dropdown .select a,
+.slider-item .currency .form-block_getit .dropdown .select a {
+  display: flex;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #F7FFEE;
+}
+.slider-item .currency .form-block_give .dropdown .select img,
+.slider-item .currency .form-block_getit .dropdown .select img {
+  max-width: 24px;
+  margin-right: 8px;
+}
+.slider-item .currency .form-block_give .dropdown .select .arrow,
+.slider-item .currency .form-block_getit .dropdown .select .arrow {
+  max-width: 12px;
+}
+.slider-item .currency .form-block_give .dropdown .select .arrow-rotate,
+.slider-item .currency .form-block_getit .dropdown .select .arrow-rotate {
+  transform: rotate(180deg);
+}
+.slider-item .currency .form-block_give .dropdown .menu,
+.slider-item .currency .form-block_getit .dropdown .menu {
+  position: absolute;
+  top: 73px;
+  width: 200px;
+  height: 200px;
+  padding: 15px 20px;
+  background-color: #10100E;
+  border: 1px solid #4F4F4F;
+  border-radius: 8px;
+  opacity: 0;
+  display: none;
+  z-index: 1;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-color: #B1FF5C #242424;
+  scrollbar-width: thin;
+}
+.slider-item .currency .form-block_give .dropdown .menu.menu-open,
+.slider-item .currency .form-block_getit .dropdown .menu.menu-open {
+  display: block;
+  opacity: 1;
+}
+.slider-item .currency .form-block_give .dropdown .menu::-webkit-scrollbar-thumb,
+.slider-item .currency .form-block_getit .dropdown .menu::-webkit-scrollbar-thumb {
+  background-color: #B1FF5C;
+  border-radius: 2px;
+}
+.slider-item .currency .form-block_give .dropdown .menu::-webkit-scrollbar,
+.slider-item .currency .form-block_getit .dropdown .menu::-webkit-scrollbar {
+  width: 3px;
+}
+.slider-item .currency .form-block_give .dropdown .menu li,
+.slider-item .currency .form-block_getit .dropdown .menu li {
+  padding: 16px;
+  border-bottom: 1px solid #242424;
+  list-style-type: none;
+}
+.slider-item .currency .form-block_give .dropdown .menu li a,
+.slider-item .currency .form-block_getit .dropdown .menu li a {
+  display: flex;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #F7FFEE;
+}
+.slider-item .currency .form-block_give .dropdown .menu li img,
+.slider-item .currency .form-block_getit .dropdown .menu li img {
+  max-width: 24px;
+  margin-right: 8px;
+}
 .slider .slick-dots {
   display: flex;
   gap: 20px;
