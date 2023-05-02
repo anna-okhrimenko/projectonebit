@@ -262,6 +262,7 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
 .slider-item {
   display: flex !important;
   justify-content: space-between;
+  padding-right: 2px;
 }
 .slider-item_info {
   max-width: 705px;
@@ -472,6 +473,7 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
   height: 8px;
   width: 8px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .slider .slick-dots li.slick-active {
   width: 160px;
@@ -540,7 +542,92 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
 }
 
 footer {
-  height: 100px;
-  margin-top: auto;
+  border-top: 1px solid #242424;
+  padding-top: 100px;
+}
+footer .footer-body {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-body .social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 28px;
+}
+footer .footer-body .social-media div {
+  padding: 13px;
+  background: #141810;
+  border-radius: 8px;
+  object-fit: cover;
+}
+footer .footer-body .social-media div img {
+  width: 24px;
+  height: 24px;
+}
+footer .footer-body .footer-titles {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4F4F4F;
+}
+footer .footer-body .footer-menu {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+footer .footer-body .footer-menu li {
+  list-style-type: none;
+  margin-bottom: 28px;
+}
+footer .footer-body .footer-menu li a {
+  text-decoration: none;
+  color: #F7FFEE;
+}
+footer .footer-body .footer-menu li a:hover {
+  color: #B1FF5C;
+}
+footer .footer-body_contact li {
+  list-style-type: none;
+  margin-bottom: 28px;
+}
+footer .footer-body_contact li a {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #F7FFEE;
+  text-decoration: none;
+}
+footer .footer-body_contact li a img {
+  padding: 13px;
+  background: #141810;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+footer .footer-botom_text {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #242424;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F4F4F;
+}
+footer .footer-botom_text .privacy {
+  display: flex;
+}
+footer .footer-botom_text .privacy a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F4F4F;
+  text-decoration: none;
+}
+footer .footer-botom_text .privacy a:first-child {
+  margin-right: 40px;
 }
 /*# sourceMappingURL=style.css.map */

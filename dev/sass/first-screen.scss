@@ -18,6 +18,7 @@
     &-item {
         display: flex !important;
         justify-content: space-between;
+        padding-right: 2px;
     
         &_info {
             max-width: 705px;
@@ -241,6 +242,7 @@
             height: 8px;
             width: 8px;
             transition: .5s;
+            cursor: pointer;
         }
 
         li.slick-active {

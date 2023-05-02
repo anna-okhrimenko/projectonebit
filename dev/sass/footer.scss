@@ -1,6 +1,104 @@
-footer{
-    height: 100px;
-    margin-top: auto;
+footer {
+    border-top: 1px solid #242424;
+    padding-top: 100px;
+    .footer-body {
+        display: flex;
+        justify-content: space-between;
+    
+        .social-media {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            gap: 28px;
+            div {
+                padding: 13px;
+                background: #141810;
+                border-radius: 8px;
+                object-fit: cover;
+                img {
+                    width: 24px;
+                    height: 24px; 
+                }
+            }
+        }
+    
+        .footer-titles {
+            margin-bottom: 40px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: $stroke-color;
+        }
+    
+        .footer-menu {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            
+            li {
+                list-style-type: none;
+                margin-bottom: 28px;
+                a {
+                    text-decoration: none;
+                    color: $titles-color;
+                    &:hover {
+                        color: $accent-color;
+                    }
+                }
+            }
+    
+        }
+    
+        &_contact {
+            li {
+                list-style-type: none;
+                margin-bottom: 28px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: $titles-color;
+                    text-decoration: none;
+                    
+                    img {
+                        padding: 13px;
+                        background: #141810;
+                        border-radius: 8px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    .footer-botom_text {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #242424;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #4F4F4F;
+
+        .privacy {
+            display: flex;
+            a {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: $stroke-color;
+                text-decoration: none;
+                &:first-child {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
 }
+
 
  
