@@ -1,4 +1,20 @@
 .slider {
+    position: relative;
+    &::before {
+        content: "";
+    }
+
+    &.bckgr-shiny::before {
+        content: "";
+        position: absolute;
+        background: rgba(141, 243, 30, 0.6);
+        filter: blur(250px);
+        left: 847px;
+        width: 622px;
+        height: 660px;
+        display: block;
+    }
+    
     &-item {
         display: flex !important;
         justify-content: space-between;
@@ -30,7 +46,6 @@
                     &:nth-child(odd) {
                         margin-right: 28px;
                     }
-    
                 }
             }
 
@@ -59,14 +74,35 @@
         .currency {
             max-width: 540px;
             padding: 40px;
-            box-shadow: 0px 4px 79px rgba(93, 209, 22, 0.2);
             border-radius: 20px;
             margin: 0 auto;
-            &::before {
-                content: "";
-                background: #8DF31E66;
-                filter: blur(250px);
-                width: 760px;
+            z-index: 10;
+            background-color: $background-color;
+
+            .definition {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                color: $sub-text;
+                margin-bottom: 20px;
+            }
+
+            .getit {
+                margin-top: 30px;
+            }
+
+            .exchange-rate {
+                display: flex;
+                margin: 12px 0 20px 0;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 34px;
+                color: $stroke-color;
+            
+                & div:last-child {
+                    margin-left: 20px;
+                    color: $accent-color;
+                }
             }
 
             .form-block_give,
@@ -79,6 +115,7 @@
                 color: $titles-color;
 
                 input[type="number"] {
+                    margin-right: 60px;
                     padding: 16px;
                     background-color: $input-card-color;
                     color: $titles-color;
@@ -108,7 +145,7 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 24px 20px;
+                        padding: 16px 20px;
                         background-color: $input-card-color;
                         border: 1px solid #4F4F4F;
                         border-radius: 8px;

@@ -4,12 +4,22 @@ $(document).ready(function () {
         arrows: false,
         speed: 800,
     });
-
+    
+    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        const sliderItem = slick['$slides'][nextSlide];
+        if(sliderItem.classList.contains('crypto-transaction')) { 
+            $('.slider').addClass('bckgr-shiny');
+        } else {
+            $('.slider').removeClass('bckgr-shiny');
+        }
+    });
 });
+
 
 const dropdowns = document.querySelectorAll('.dropdown');
 dropdowns.forEach(dropdown => {
     const select = dropdown.querySelector('.select');
+    const selectInput = select.querySelector('input');
     const arrow = dropdown.querySelector('.arrow');
     const menu = dropdown.querySelector('.menu');
     const options = dropdown.querySelectorAll('.menu li');
@@ -24,6 +34,7 @@ dropdowns.forEach(dropdown => {
     options.forEach(option => {
         option.addEventListener('click', () => {
             selected.innerHTML = option.innerHTML;
+            selectInput.value = option.textContent.trim();
             select.classList.remove('select-clicked');
             arrow.classList.remove('arrow-rotate');
             menu.classList.remove('menu-open');
@@ -40,3 +51,5 @@ dropdowns.forEach(dropdown => {
         }
     });
 });
+
+

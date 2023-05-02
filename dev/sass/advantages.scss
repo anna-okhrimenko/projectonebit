@@ -1,0 +1,35 @@
+.advantages-block {
+    display: flex;
+    flex-wrap: wrap;
+    &_card {
+        display: flex;
+        background-color: $input-card-color;
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+        
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
+        
+        max-width: 705px;
+        &-info {
+            padding: 40px 38px 40px 40px;
+            .advantages-block_title {
+                margin-bottom: 16px;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 42px;
+                color: $titles-color;
+            }
+            .advantages-block_subtitle {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 34px;
+                color: $body-text;
+            }
+        }
+
+        
+    }
+}
