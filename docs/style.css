@@ -541,6 +541,144 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
   color: #10100E;
 }
 
+.findus .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.findus .title .sm-title {
+  text-align: left;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  color: #F7FFEE;
+}
+.findus .title .subtitle a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4F4F4F;
+  text-decoration: none;
+}
+.findus .title .subtitle a:hover {
+  color: #B1FF5C;
+}
+.findus .cityes .city {
+  position: relative;
+  overflow: hidden;
+  padding: 61px 100px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #F7FFEE;
+  border-top: 1px solid #4F4F4F;
+  cursor: pointer;
+}
+.findus .cityes .city:last-child {
+  border-bottom: 1px solid #4F4F4F;
+}
+.findus .cityes .city h5 {
+  position: relative;
+  z-index: 1;
+}
+.findus .cityes .cityes-kharkiv .city-img {
+  background-image: url(../assets/img/kharkiv-bg.png);
+}
+.findus .cityes .cityes-kyiv .city-img {
+  background-image: url(../assets/img/kyiv-bg.png);
+}
+.findus .cityes .cityes-lviv .city-img {
+  background-image: url(../assets/img/lviv-bg.png);
+}
+.findus .cityes .cityes-odesa .city-img {
+  background-image: url(../assets/img/odesa-bg.png);
+}
+.findus .cityes .city-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 1s ease-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(1.2);
+}
+.findus .cityes .city:hover .city-img {
+  top: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.acordion-item {
+  padding: 41px 0;
+  border-top: 1px solid #4F4F4F;
+}
+.acordion-item .acordion-title {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  color: #F7FFEE;
+  cursor: pointer;
+}
+.acordion-item .acordion-title:hover {
+  color: #B1FF5C;
+}
+.acordion-item .acordion-content {
+  padding: 0 37px 0 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  line-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  color: transparent;
+}
+.acordion-item.active .acordion-content {
+  padding: 0 37px 0 0;
+  line-height: 1.5;
+  color: #8E938C;
+}
+.acordion-item .accord-btn {
+  border: none;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+.acordion-item .accord-btn:before {
+  background: #B1FF5C;
+  content: "";
+  height: 3px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotate(-90deg);
+  transition: all 0.2s ease-in-out;
+  width: 27px;
+}
+.acordion-item .accord-btn:after {
+  background: #B1FF5C;
+  content: "";
+  height: 3px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 27px;
+}
+.acordion-item.active .accord-btn:before {
+  transform: rotate(0deg);
+}
+
 footer {
   border-top: 1px solid #242424;
   padding-top: 100px;
@@ -548,6 +686,7 @@ footer {
 footer .footer-body {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 72px;
 }
 footer .footer-body .social-media {
   display: flex;

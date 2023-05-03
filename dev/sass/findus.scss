@@ -1,0 +1,90 @@
+.findus {
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .sm-title {
+            text-align: left;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 60px;
+            color: $titles-color;
+        }
+        .subtitle a {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            color: $stroke-color;
+            text-decoration: none;
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+
+    .cityes {
+        .city {
+            position: relative;
+            overflow: hidden;
+            padding: 61px 100px;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 42px;
+            color: $titles-color;
+            border-top: 1px solid $stroke-color;
+            cursor: pointer;
+            &:last-child {
+                border-bottom: 1px solid $stroke-color;
+            }
+            h5 {
+                position: relative;
+                z-index: 1;
+            }
+            
+        }
+        .cityes-kharkiv {
+            .city-img {
+                background-image: url(../assets/img/kharkiv-bg.png);
+            }
+        }
+        .cityes-kyiv {
+            .city-img {
+                background-image: url(../assets/img/kyiv-bg.png);
+            }
+        }
+        .cityes-lviv {
+            .city-img {
+                background-image: url(../assets/img/lviv-bg.png);
+            }
+        }
+        .cityes-odesa {
+            .city-img {
+                background-image: url(../assets/img/odesa-bg.png);
+            }
+        }
+
+        .city-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: all 1s ease-out;
+            background-size: cover;
+            background-repeat:no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: scale(1.2);
+        }
+
+        .city:hover .city-img {
+            top: 0;
+            opacity: 1;
+            transform: scale(1);
+            
+        }
+
+    }
+}
