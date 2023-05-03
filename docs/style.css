@@ -743,6 +743,24 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
   right: 336px;
 }
 
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  max-width: 206px;
+  margin: -20px auto 0;
+  gap: 28px;
+}
+.social-media div {
+  padding: 13px;
+  background: #141810;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.social-media div img {
+  width: 24px;
+  height: 24px;
+}
+
 footer {
   border-top: 1px solid #242424;
   padding-top: 100px;

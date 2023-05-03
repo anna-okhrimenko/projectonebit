@@ -1,0 +1,17 @@
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    max-width: 206px;
+    margin: -20px auto 0;
+    gap: 28px;
+    div {
+        padding: 13px;
+        background: #141810;
+        border-radius: 8px;
+        object-fit: cover;
+        img {
+            width: 24px;
+            height: 24px; 
+        }
+    }
+}
