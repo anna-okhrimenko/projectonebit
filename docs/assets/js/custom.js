@@ -4,6 +4,12 @@ $(document).ready(function () {
         arrows: false,
         speed: 800,
     });
+    $('.review-slider').slick({
+        dots: false,
+        arrows: true,
+        speed: 800,
+        
+    });
     
     $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         const sliderItem = slick['$slides'][nextSlide];
