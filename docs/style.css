@@ -582,16 +582,16 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
   z-index: 1;
 }
 .findus .cityes .cityes-kharkiv .city-img {
-  background-image: url(../assets/img/kharkiv-bg.png);
+  background-image: url(assets/img/kharkiv-bg.png);
 }
 .findus .cityes .cityes-kyiv .city-img {
-  background-image: url(../assets/img/kyiv-bg.png);
+  background-image: url(assets/img/kyiv-bg.png);
 }
 .findus .cityes .cityes-lviv .city-img {
-  background-image: url(../assets/img/lviv-bg.png);
+  background-image: url(assets/img/lviv-bg.png);
 }
 .findus .cityes .cityes-odesa .city-img {
-  background-image: url(../assets/img/odesa-bg.png);
+  background-image: url(assets/img/odesa-bg.png);
 }
 .findus .cityes .city-img {
   position: absolute;
