@@ -274,6 +274,13 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
   color: #F7FFEE;
   margin-bottom: 20px;
 }
+.slider-item_info .basis-subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8E938C;
+  margin-bottom: 80px;
+}
 .slider-item_info-features {
   display: flex;
   flex-wrap: wrap;
@@ -291,6 +298,9 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
 }
 .slider-item_info-features .features-block:nth-child(odd) {
   margin-right: 28px;
+}
+.slider-item_info-features .features-block img {
+  margin-right: 20px;
 }
 .slider-item_info-top {
   display: flex;
@@ -733,6 +743,7 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
   border-radius: 50px;
   right: 242px;
   z-index: 1;
+  cursor: pointer;
 }
 .review button.slick-next.slick-arrow {
   bottom: 0px;
