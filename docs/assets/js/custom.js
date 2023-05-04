@@ -3,6 +3,17 @@ $(document).ready(function () {
         dots: true,
         arrows: false,
         speed: 800,
+        responsive: [
+            {
+              breakpoint: 1140,
+              settings: {
+                dots: false,
+              }
+            },
+            
+            
+            
+        ]
     });
     $('.review-slider').slick({
         dots: false,

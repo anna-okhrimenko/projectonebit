@@ -1,0 +1,77 @@
+@media screen and (max-width: 1139px) {
+    //tamplate//
+    .btn {
+        &.big {
+            height: 89px;
+        }
+    }
+
+    //first-screen//
+
+    .slider {
+        .slider-item {
+                    
+            .slider-item_info {
+                max-width: 555px;
+                .slider-item_info-title {
+                    font-weight: 500;
+                    font-size: 48px;
+                    line-height: 60px;
+                }
+    
+                .basis-subtitle {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 34px;
+                }
+    
+                .slider-item_info-features {
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                    
+                    .features-block {
+                        max-width: 263px;
+                    }
+                }
+            }
+        
+            .slider-item-img {
+                max-width: 500px;
+            }
+            .currency {
+                max-width: 457px;
+
+                .definition {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+    
+                .exchange-rate {
+                    justify-content: center;
+                }
+    
+                .form-block_give,
+                .form-block_getit {
+                    padding: 16px 16px 16px 24px;
+    
+                    input[type="number"] {
+                        font-size: 18px;
+                        line-height: 23px;
+                        margin-right: 20px;
+    
+                    }
+    
+                    .dropdown {
+                        min-width: 200px;
+                        position: relative;
+                    }
+    
+    
+                }
+            }
+        }
+    
+    
+    }
+}
