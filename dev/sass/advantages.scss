@@ -1,9 +1,13 @@
 .advantages-block {
-    display: flex;
-    flex-wrap: wrap;
+    .first-block,
+    .second-block {
+        display: flex;
+    }
     &_card {
         display: flex;
         background-color: $input-card-color;
+        max-width: 705px;
+
         &:nth-child(odd) {
             margin-right: 30px;
         }
@@ -12,9 +16,8 @@
             margin-bottom: 30px;
         }
         
-        max-width: 705px;
         &-info {
-            padding: 40px 38px 40px 40px;
+            padding: 38px 38px 40px 40px;
             .advantages-block_title {
                 margin-bottom: 16px;
                 font-weight: 500;
@@ -29,7 +32,6 @@
                 color: $body-text;
             }
         }
-
         
     }
 }

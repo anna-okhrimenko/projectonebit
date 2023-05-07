@@ -13,6 +13,7 @@
         width: 622px;
         height: 660px;
         display: block;
+        
     }
 
     
@@ -166,13 +167,14 @@
                         border-radius: 8px;
                         cursor: pointer;
                         
-                        a {
+                        .selected div {
                             display: flex;
                             text-decoration: none;
                             font-weight: 500;
                             font-size: 18px;
                             line-height: 23px;
                             color: $titles-color;
+                            cursor: pointer;
                         }
                         img {
                             max-width: 24px;
@@ -222,13 +224,14 @@
                             border-bottom: 1px solid #242424;
                             
                             list-style-type: none;
-                            & a {
+                            & div {
                                 display: flex;
                                 text-decoration: none;
                                 font-weight: 500;
                                 font-size: 18px;
                                 line-height: 23px;
                                 color: $titles-color;
+                                cursor: pointer;
                             }
                             & img {
                                 max-width: 24px;

@@ -6,6 +6,13 @@
         background: $accent-color;
         border-radius: 15px; 
         width: 480px;
+
+        .up-subtitle {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            color: $accent-col-2;
+        }
         p {
             font-weight: 500;
             font-size: 24px;

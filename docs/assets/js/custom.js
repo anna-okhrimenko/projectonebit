@@ -81,4 +81,16 @@ const installAccordion = function() {
 }
 installAccordion()
 
+// modal 
+
+const modal = document.querySelector('.header-mobile_modal');
+const modalBtnOpen = document.querySelector('.open-modal');
+const modalBtnClose = document.querySelector('.close-modal');
+modalBtnOpen.addEventListener('click', () => {
+    modal.classList.add('open');
+});
+modalBtnClose.addEventListener('click', () => {
+    modal.classList.remove('open');
+});
+
 

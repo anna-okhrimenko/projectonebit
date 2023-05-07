@@ -18,6 +18,9 @@
         <div class="header-container">
             <div class="header-logo">
                 <a href="index.html"><img src="assets/img/header-logo.png" alt=""></a>
+
+            </div>
+            <div class="header-nav">
                 <ul class="header-logo_list">
                     <li class="header-logo_list-link">
                         <a href="#">Україна</a>
@@ -28,8 +31,6 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
-            <div class="header-nav">
                 <ul class="header-nav_list">
                     <li class="header-nav_list-link">
                         <a href="#">послуги</a>
@@ -58,19 +59,75 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="header-btn_block">
+                    <ul class="header-btn_list">
+                        <li class="header-btn_list-link">
+                            <a href="#">ua</a>
+                            <ul class="header-btn_sublist">
+                                <li class="header-btn_list-sublink"><a href="">pl</a></li>
+                                <li class="header-btn_list-sublink"><a href="">en</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary">реєстрація</button>
+                </div>
             </div>
-            <div class="header-btn_block">
-                <ul class="header-btn_list">
-                    <li class="header-btn_list-link">
-                        <a href="#">ua</a>
-                        <ul class="header-btn_sublist">
-                            <li class="header-btn_list-sublink"><a href="">pl</a></li>
-                            <li class="header-btn_list-sublink"><a href="">en</a></li>
+            <button class="header-button open-modal">
+                <span class="togler"></span>
+            </button>
+        </div>
+
+        <div class="header-mobile_modal">
+
+            <div class="header-nav">
+                <div class="modal-head">
+                    <button class="header-button close-modal">
+                        <span class="togler"></span>
+                    </button>
+                    <div class="modal-head_right">
+
+                        <div class="header-btn_block">
+                            <ul class="header-btn_list">
+                                <li class="header-btn_list-link">
+                                    <a href="#">ua</a>
+                                    <ul class="header-btn_sublist">
+                                        <li class="header-btn_list-sublink"><a href="">pl</a></li>
+                                        <li class="header-btn_list-sublink"><a href="">en</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="header-logo_list">
+                            <li class="header-logo_list-link">
+                                <a href="#">Україна</a>
+                                <span><img src="assets/img/down-arrow.svg"></span>
+                                <ul class="header-logo_sublist">
+                                    <li class="header-logo_list-sublink"><a href="">Польща</a></li>
+                                    <li class="header-logo_list-sublink"><a href="">Чехія</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-                <button class="btn btn-secondary">реєстрація</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="header-nav_list">
+                        <li class="header-nav_list-link">
+                            <a href="#">послуги</a>
+                        </li>
+                        <li class="header-nav_list-link">
+                            <a href="#">як це працює</a>
+                        </li>
+                        <li class="header-nav_list-link">
+                            <a href="#">де нас знайти</a>
+                        </li>
+                        <li class="header-nav_list-link">
+                            <a href="#">клієнтам</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary">реєстрація</button>
+                </div>
             </div>
+
         </div>
     </header>
 
@@ -116,17 +173,29 @@
                                         <div class="select">
                                             <input type="hidden" value="bitcoin" name="currency_2">
                                             <div class="selected">
-                                                <a href="#"><img src="assets/img/bitcoin-logo.png"> bitcoin </a>
+                                                <div><img src="assets/img/bitcoin-logo.png"> bitcoin </div>
                                             </div>
                                             <div class="arrow"><img src="assets/img/down-arrow.svg"></div>
                                         </div>
                                         <ul class="menu select-give-currency">
-                                            <li><a href="#"><img src="assets/img/bitcoin-logo.png"> bitcoin </a></li>
-                                            <li><a href="#"><img src="assets/img/ethereum-logo.png"> ethereum </a></li>
-                                            <li><a href="#"><img src="assets/img/litecoin-logo.png"> litecoin </a></li>
-                                            <li><a href="#"><img src="assets/img/ripple-logo.png"> ripple </a></li>
-                                            <li><a href="#"><img src="assets/img/monero-logo.png"> monero </a></li>
-                                            <li><a href="#"><img src="assets/img/dogecoin-logo.png"> dogecoin </a></li>
+                                            <li>
+                                                <div><img src="assets/img/bitcoin-logo.png"> bitcoin </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="assets/img/ethereum-logo.png"> ethereum </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="assets/img/litecoin-logo.png"> litecoin </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="assets/img/ripple-logo.png"> ripple </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="assets/img/monero-logo.png"> monero </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="assets/img/dogecoin-logo.png"> dogecoin </div>
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -140,15 +209,23 @@
                                         <div class="select">
                                             <input type="hidden" value="usd" name="currency_1">
                                             <div class="selected">
-                                                <a href="#"><img src="assets/img/usd-icon.png"> USD</a>
+                                                <div><img src="assets/img/usd-icon.png"> USD</div>
                                             </div>
                                             <div class="arrow"><img src="assets/img/down-arrow.svg"></div>
                                         </div>
                                         <ul class="menu select-getit-currency">
-                                            <li> <a href="#"><img src="assets/img/usd-icon.png"> USD</a></li>
-                                            <li> <a href="#"><img src="assets/img/eur-icon.png"> EUR</a></li>
-                                            <li> <a href="#"><img src="assets/img/uah-icon.png"> UAH</a></li>
-                                            <li> <a href="#"><img src="assets/img/pln-icon.png"> PLN</a></li>
+                                            <li>
+                                                <div><img src="assets/img/usd-icon.png"> USD</div>
+                                            </li>
+                                            <li>
+                                                <div><img src="assets/img/eur-icon.png"> EUR</div>
+                                            </li>
+                                            <li>
+                                                <div><img src="assets/img/uah-icon.png"> UAH</div>
+                                            </li>
+                                            <li>
+                                                <div><img src="assets/img/pln-icon.png"> PLN</div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -256,45 +333,49 @@
                     </div>
                 </div>
                 <div class="advantages-block">
-                    <div class="advantages-block_card">
-                        <div class="advantages-block_card-info">
-                            <div class="advantages-block_title">індивідуальний підхід</div>
-                            <div class="advantages-block_subtitle">Ми працюємо, піклуючись про кожного нашого клієнта</div>
-                        </div>
-                        <div class="advantages-block_card-img">
-                            <img src="assets/img/advantage-img-1.png" alt="">
-                        </div>
+                    <div class="first-block">
+                        <div class="advantages-block_card">
+                            <div class="advantages-block_card-info">
+                                <div class="advantages-block_title">індивідуальний підхід</div>
+                                <div class="advantages-block_subtitle">Ми працюємо, піклуючись про кожного нашого клієнта</div>
+                            </div>
+                            <div class="advantages-block_card-img">
+                                <img src="assets/img/advantage-img-1.png" alt="">
+                            </div>
 
+                        </div>
+                        <div class="advantages-block_card">
+                            <div class="advantages-block_card-info">
+                                <div class="advantages-block_title">тех.підтримка клієнтів 24/7</div>
+                                <div class="advantages-block_subtitle">Напряму задавайте цікаві вам питання у будь-який час</div>
+                            </div>
+                            <div class="advantages-block_card-img">
+                                <img src="assets/img/advantage-img-2.png" alt="">
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="advantages-block_card">
-                        <div class="advantages-block_card-info">
-                            <div class="advantages-block_title">тех.підтримка клієнтів 24/7</div>
-                            <div class="advantages-block_subtitle">Напряму задавайте цікаві вам питання у будь-який час</div>
-                        </div>
-                        <div class="advantages-block_card-img">
-                            <img src="assets/img/advantage-img-2.png" alt="">
-                        </div>
+                    <div class="second-block">
+                        <div class="advantages-block_card">
+                            <div class="advantages-block_card-info">
+                                <div class="advantages-block_title">безпека операцій</div>
+                                <div class="advantages-block_subtitle">Особисті дані клієнтів та історії операцій суворо конфіденційні</div>
+                            </div>
+                            <div class="advantages-block_card-img">
+                                <img src="assets/img/advantage-img-3.png" alt="">
+                            </div>
 
-                    </div>
-                    <div class="advantages-block_card">
-                        <div class="advantages-block_card-info">
-                            <div class="advantages-block_title">безпека операцій</div>
-                            <div class="advantages-block_subtitle">Особисті дані клієнтів та історії операцій суворо конфіденційні</div>
                         </div>
-                        <div class="advantages-block_card-img">
-                            <img src="assets/img/advantage-img-3.png" alt="">
-                        </div>
+                        <div class="advantages-block_card">
+                            <div class="advantages-block_card-info">
+                                <div class="advantages-block_title">фіксований курс</div>
+                                <div class="advantages-block_subtitle">Гарантована фіксація курсу після фінального підтвердження blockchain</div>
+                            </div>
+                            <div class="advantages-block_card-img">
+                                <img src="assets/img/advantage-img-4.png" alt="">
+                            </div>
 
-                    </div>
-                    <div class="advantages-block_card">
-                        <div class="advantages-block_card-info">
-                            <div class="advantages-block_title">фіксований курс</div>
-                            <div class="advantages-block_subtitle">Гарантована фіксація курсу після фінального підтвердження blockchain</div>
                         </div>
-                        <div class="advantages-block_card-img">
-                            <img src="assets/img/advantage-img-4.png" alt="">
-                        </div>
-
                     </div>
 
                 </div>
@@ -315,17 +396,17 @@
                 </div>
                 <div class="steps-block">
                     <div class="steps-block_card">
-                        <p>крок 1</p>
+                        <p class="up-subtitle">крок 1</p>
                         <h3>реєстрація</h3>
                         <p>зареєструйся, щоб отримати можливість приєднатися до бонусної системи та отримати додаткові можливості</p>
                     </div>
                     <div class="steps-block_card">
-                        <p>крок 2</p>
+                        <p class="up-subtitle">крок 2</p>
                         <h3>верифікація</h3>
                         <p>пройдіть верифікацію особи та отримайте можливість здійснювати обмін фіатних валют</p>
                     </div>
                     <div class="steps-block_card">
-                        <p>крок 3</p>
+                        <p class="up-subtitle">крок 3</p>
                         <h3>торгівля</h3>
                         <p>користуйтеся найвигіднішим курсом для обміну валют</p>
                     </div>

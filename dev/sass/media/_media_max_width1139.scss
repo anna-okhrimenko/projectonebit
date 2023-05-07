@@ -1,16 +1,68 @@
 @media screen and (max-width: 1139px) {
     //tamplate//
+
+    section {
+        margin-bottom: 200px;
+    }
+
     .btn {
         &.big {
             height: 89px;
         }
     }
 
+    //header//
+    header {
+        .header-nav {
+            display: none;
+        }
+        .header-button {
+            padding: 15px 12px;
+            background: #20251B;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+
+            .togler {
+                position: relative;
+                display: block;
+                width: 20px;
+                height: 2px;
+                background-color: $accent-color;
+            }
+
+            .togler::before {
+                content: "";
+                position: absolute;
+                bottom: 8px;
+                left: 0;
+                width: 20px;
+                height: 2px;
+                background-color: $accent-color;
+            }
+            .togler::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 8px;
+                width: 20px;
+                height: 2px;
+                background-color: $accent-color;
+            }
+        }
+
+
+
+    }
+
+
+
     //first-screen//
 
     .slider {
         .slider-item {
-                    
+            flex-wrap: wrap; 
+            justify-content: center;       
             .slider-item_info {
                 max-width: 555px;
                 .slider-item_info-title {
@@ -73,5 +125,55 @@
         }
     
     
+    }
+
+    //advantages//
+
+    .advantages-block {
+        .advantages-block_card {
+            max-width: 555px;
+            padding: 30px 10px 30px 30px;
+            
+            .advantages-block_card-info {
+                padding: 0 10px 0 0;
+                .advantages-block_title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .advantages-block_subtitle {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+
+            .advantages-block_card-img {
+                max-width: 234px;
+
+                img {
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+
+    //steps//
+
+    .steps-block {
+        &_card {
+            padding: 40px;
+            width: 360px;
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+    
+            h3 {
+                font-size: 28px;
+                line-height: 36px;
+    
+            }
+        }
     }
 }
