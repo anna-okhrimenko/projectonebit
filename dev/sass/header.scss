@@ -5,7 +5,7 @@ header{
 	}
 	.header-container {
 		max-width: 1920px;
-		padding: 47px 50px;
+		padding: 47px 20px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -192,6 +192,11 @@ header{
 			}
 		}
 	}
+
+	.header-button {
+		border: none;
+	}
+
 	.header-mobile_modal {
 		
 		position: fixed;
@@ -276,6 +281,7 @@ header{
 			.header-nav_list {
 				display: flex;
 				flex-direction: column;
+				margin-bottom: 128px;
 			}
 		}
 

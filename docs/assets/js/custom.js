@@ -93,4 +93,3 @@ modalBtnClose.addEventListener('click', () => {
     modal.classList.remove('open');
 });
 
-

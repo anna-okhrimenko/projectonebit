@@ -1,0 +1,166 @@
+@media screen and (max-width: 991px) {
+    section {
+        margin-bottom: 150px;
+    }
+
+    .title {
+        margin-bottom: 80px;
+        .basis-title {
+            font-size: 42px;
+            line-height: 50px;
+        }
+        
+        .basis-subtitle {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    
+    }
+
+    .slider {
+        position: relative;
+        &::before {
+            display: none;
+        }
+    
+        &.bckgr-shiny::before {
+            display: none;
+        }
+        
+        &-item {
+            flex-direction: column-reverse;
+            align-items: center;
+        
+            &_info {
+                &-title {
+                    font-size: 46px;
+                }
+            }
+        }
+    }
+
+    //advantage//
+    .advantages-block .advantages-block_card {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+
+    }
+
+
+    //steps// 
+
+    .steps-block {
+        flex-direction: column;
+        align-items: center;
+        &_card {
+            min-height: 320px;
+            padding: 30px;
+
+            p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+    
+            h3 {
+                font-size: 28px;
+                line-height: 35px;
+    
+            }
+        }
+    }
+
+    //find us//
+
+    .findus {
+        .title {
+            .sm-title {
+                font-size: 42px;
+                line-height: 50px;
+            }
+            .subtitle a {
+                display: none;
+            }
+        }
+        .subtitle.on-mobile a {
+            display: block;
+            margin-top: 40px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: $stroke-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+
+    //review//
+
+    .review {
+        padding: 100px 0;
+        &-slider {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url(assets/img/quotes-mobile.png);
+                width: 86px;
+                height: 70px;
+                left: -12px;
+                top: -16px;
+            }
+        }
+        .slider-content {
+            max-width: 955px;
+            &_text {
+                font-size: 28px;
+                line-height: 36px;
+            }
+            
+            &_name {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        
+            &_data {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+        .slick-arrow {
+            right: 5px;
+        }
+        button.slick-prev.slick-arrow {
+            right: 90px;
+        }
+    
+    }
+
+    //footer//
+
+    footer {
+        padding-top: 60px;
+        .footer-body {
+            flex-direction: column;
+            margin-bottom: 52px;
+            &_logo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 40px;
+            }
+        
+            .social-media {
+                margin: 0;
+            }
+        
+        }
+    
+    }
+
+}
+
+
