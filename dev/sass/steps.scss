@@ -2,6 +2,9 @@
     display: flex;
     gap: 30px;
     &_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 50px;
         background: $accent-color;
         border-radius: 15px; 

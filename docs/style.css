@@ -623,6 +623,9 @@ header .header-mobile_modal .modal-body .header-nav_list {
   gap: 30px;
 }
 .steps-block_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 50px;
   background: #B1FF5C;
   border-radius: 15px;
@@ -1392,6 +1395,9 @@ footer .footer-botom_text .privacy a:first-child {
     font-size: 20px;
     line-height: 32px;
   }
+  .acordion-item .acordion-title h5 {
+    padding-right: 30px;
+  }
   .acordion-item .acordion-content {
     padding: 0 37px 0 0;
     font-weight: 400;
@@ -1405,9 +1411,6 @@ footer .footer-botom_text .privacy a:first-child {
     padding: 0 37px 0 0;
     line-height: 26px;
     color: #8E938C;
-  }
-  .acordion-item .accord-btn {
-    margin-left: 10px;
   }
   .acordion-item .accord-btn:before, .acordion-item .accord-btn:after {
     height: 2px;
@@ -1442,6 +1445,12 @@ footer .footer-botom_text .privacy a:first-child {
   }
   footer .footer-body {
     margin-bottom: 40px;
+  }
+  footer .footer-body .footer-body_logo {
+    flex-direction: column;
+  }
+  footer .footer-body .footer-body_logo .social-media {
+    margin-top: 20px;
   }
   footer .footer-body .footer-titles {
     margin-bottom: 12px;

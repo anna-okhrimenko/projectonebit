@@ -201,6 +201,9 @@
             padding: 0;
             font-size: 20px;
             line-height: 32px;
+            h5 {
+                padding-right: 30px;
+            }
         }
     
         .acordion-content {
@@ -220,7 +223,6 @@
         }
     
         .accord-btn {
-            margin-left: 10px;
             &:before,
             &:after {
                 height: 2px;
@@ -269,6 +271,14 @@
         padding-top: 41px;
         .footer-body {
             margin-bottom: 40px;
+
+            .footer-body_logo {
+                flex-direction: column;
+
+                .social-media {
+                    margin-top: 20px;
+                }
+            }
         
             .footer-titles {
                 margin-bottom: 12px;
