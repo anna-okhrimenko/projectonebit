@@ -1,0 +1,36 @@
+.banner-block {
+    display: flex;
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        max-width: 705px;
+        .title {
+            margin-bottom: 80px;
+        }
+        .basis-title {
+            font-size: 58px;
+            line-height: 70px;
+        }
+        .basis-title,
+        .basis-subtitle {
+            text-align: start;
+        }
+        .banner-links {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            &-item {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                a {
+                    text-decoration: none;
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+    
+}

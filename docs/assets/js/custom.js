@@ -93,3 +93,14 @@ modalBtnClose.addEventListener('click', () => {
     modal.classList.remove('open');
 });
 
+const spredList = document.querySelectorAll('.spred');
+spredList.forEach(function (spred){
+    let spredValue = spred.textContent;
+    spredValue = spredValue.replace(',', '.');
+    spredValue = parseFloat(spredValue);
+    if(spredValue > 0) {
+        spred.classList.add('up');
+    } else if(spredValue < 0) {
+        spred.classList.add('down');
+    }
+});

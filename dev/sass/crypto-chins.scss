@@ -1,0 +1,68 @@
+.crypto-chins {
+    .title {
+        display: flex;
+        align-items: center;
+        .basis-title {
+            margin-right: 20px;
+        }
+        .dropdown {
+            .select {
+                border: 1px solid #4F4F4F;
+                border-radius: 50px;
+
+            }
+        }
+    }
+
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        width: 100%;
+        thead {
+            th {
+                padding: 35px;
+            }
+            p {
+                text-align: start;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                color: $stroke-color;
+            }
+        }
+        tbody {
+            tr:nth-child(odd) {
+                background: $input-card-color;
+                border-radius: 8px;
+            }
+            td {
+                padding: 35px;
+                p {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: $titles-color;
+                    span {
+                        color: #4F4F4F;
+                        margin-left: 10px;
+                    }
+                }
+                img {
+                    margin-right: 12px;
+                } 
+                .spred.down {
+                    color: #FF4646;
+                }
+
+                .spred.up {
+                    color: $accent-color;
+                }
+            }
+
+            tr p:first-child {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
