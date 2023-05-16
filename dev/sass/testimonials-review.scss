@@ -1,0 +1,56 @@
+.testimonials-review {
+    .basis-title {
+        text-align: left;
+    }
+    .testimonials-review_cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        .review_cards-block {
+            max-width: 705px;
+            padding: 40px 40px 40px 50px;
+            border-radius: 15px;
+            background-color: $input-card-color;
+            color: $stroke-color;
+            font-weight: 400;
+            .review-person_name {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 40px;
+                margin-bottom: 20px;
+                color: $titles-color;
+            }
+            .review-person_text {
+                max-height: 230px;
+                overflow: hidden;
+                font-size: 20px;
+                line-height: 34px;
+                margin-bottom: 40px;
+            }
+
+            .review-person_text.text-open {
+                max-height: fit-content;
+            }
+            .review-person_footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .review-person_data {
+                font-size: 18px;
+                line-height: 23px;
+                
+            }
+            &:nth-child(odd) {
+                margin-bottom: 30px;
+                margin-right: 30px;
+            }
+            &:nth-child(even) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .review-btn {
+        width: 100%;
+    }
+}

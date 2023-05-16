@@ -93,6 +93,8 @@ modalBtnClose.addEventListener('click', () => {
     modal.classList.remove('open');
 });
 
+//table change color spred//
+
 const spredList = document.querySelectorAll('.spred');
 spredList.forEach(function (spred){
     let spredValue = spred.textContent;
@@ -104,3 +106,32 @@ spredList.forEach(function (spred){
         spred.classList.add('down');
     }
 });
+
+//open full comment//
+
+const textReviews = document.querySelectorAll('.review-person_text');
+textReviews.forEach(function (review, i) {
+    const openBtn = review.closest('.review_cards-block').querySelector('.btn-open');
+    openBtn.addEventListener('click', () => {
+        closeReviews(i);
+        review.classList.toggle('text-open');
+        if(review.classList.contains('text-open')) {
+            openBtn.innerHTML = "закрити"
+        } else {
+            openBtn.innerHTML = "читати повністю"
+        }
+    });
+    
+});
+
+const closeReviews = (currentIndex) => {
+    textReviews.forEach(function (review, i) {
+        if(currentIndex != i) {
+            const openBtn = review.closest('.review_cards-block').querySelector('.btn-open');
+            review.classList.remove('text-open');
+            openBtn.innerHTML = "читати повністю"
+        } else {
+            null
+        }
+    });
+}
