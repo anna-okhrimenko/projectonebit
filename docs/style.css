@@ -1079,7 +1079,7 @@ footer .footer-botom_text .privacy a:first-child {
 .crypto-chins table tbody td.price {
   display: none;
 }
-.crypto-chins table tbody tr p:first-child {
+.crypto-chins table tbody tr td:first-child p {
   display: flex;
   align-items: center;
 }
@@ -1440,13 +1440,25 @@ footer .footer-botom_text .privacy a:first-child {
     display: none;
   }
   .crypto-chins table thead th.price {
-    display: initial;
+    display: table-cell;
+  }
+  .crypto-chins table thead th.price p {
+    text-align: right;
+  }
+  .crypto-chins table thead th .spred {
+    text-align: right;
   }
   .crypto-chins table tbody td.bill {
     display: none;
   }
   .crypto-chins table tbody td.price {
-    display: initial;
+    display: table-cell;
+  }
+  .crypto-chins table tbody td.price p {
+    text-align: right;
+  }
+  .crypto-chins table tbody td .spred {
+    text-align: right;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1457,12 +1469,18 @@ footer .footer-botom_text .privacy a:first-child {
   .crypto-chins .title {
     flex-wrap: wrap;
   }
+  .crypto-chins table thead th {
+    padding: 20px 0 20px 20px;
+  }
   .crypto-chins table thead th.table-btn {
     display: none;
   }
   .crypto-chins table thead th p {
     font-size: 12px;
     line-height: 15px;
+  }
+  .crypto-chins table tbody td {
+    padding: 20px 15px;
   }
   .crypto-chins table tbody td.table-btn {
     display: none;

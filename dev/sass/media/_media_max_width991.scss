@@ -222,7 +222,13 @@
                         display: none;
                     }
                     &.price {
-                        display: initial;
+                        display: table-cell;
+                        p {
+                            text-align: right;
+                        }
+                    }
+                    .spred {
+                        text-align: right;
                     }
                 }
             }
@@ -232,7 +238,13 @@
                         display: none;
                     }
                     &.price {
-                        display: initial;
+                        display: table-cell;
+                        p {
+                            text-align: right;
+                        }
+                    }
+                    .spred {
+                        text-align: right;
                     }
 
                 }
