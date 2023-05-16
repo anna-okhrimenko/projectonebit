@@ -1,10 +1,12 @@
 .banner-block {
     display: flex;
+    justify-content: space-between;
+    align-items: end;
     .banner-content {
         display: flex;
         flex-direction: column;
         justify-content: end;
-        max-width: 705px;
+        width: 705px;
         .title {
             margin-bottom: 80px;
         }
@@ -30,6 +32,13 @@
                     color: $accent-color;
                 }
             }
+        }
+    }
+    .banner-img {
+        max-width: 665px;
+        border-radius: 30px;
+        img {
+            width: 100%;
         }
     }
     

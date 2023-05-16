@@ -14,6 +14,9 @@
             font-size: 22px;
             line-height: 30px;
         }
+        &.left {
+            text-align: center;
+        }
     
     }
 
@@ -161,6 +164,81 @@
     
     }
 
+
+    //testimonial//
+
+    .testimonials-review {
+        .testimonials-review_cards {
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 60px;
+            justify-items: center;
+            .review_cards-block {
+                &:nth-child(odd) {
+                    margin-bottom: 30px;
+                    margin-right: 0;
+                }
+                &:nth-child(even) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    //banner//
+
+    .banner-block {
+        flex-direction: column-reverse;
+        align-items: center;
+        .banner-content {
+            width: 100%;
+            .title {
+                margin-bottom: 40px;
+                .basis-title {
+                    font-size: 42px;
+                    line-height: 50px;
+                }
+            }
+        }
+        .banner-img {
+            margin-bottom: 32px;
+        }
+        
+        .banner-links {
+            flex-direction: column;
+        }
+        button.btn.btn-primary {
+            width: 100%;
+        }
+    }
+
+
+    //crypto-chins//
+
+    .crypto-chins {
+        table {
+            thead {
+                th {
+                    &.bill {
+                        display: none;
+                    }
+                    &.price {
+                        display: initial;
+                    }
+                }
+            }
+            tbody {
+                td {
+                    &.bill {
+                        display: none;
+                    }
+                    &.price {
+                        display: initial;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 

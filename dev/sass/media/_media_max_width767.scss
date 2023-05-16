@@ -7,4 +7,35 @@
         
     }
 
+    //crypto-chins//
+
+    .crypto-chins {
+        .title {
+            flex-wrap: wrap;
+        }
+        table {
+            thead {
+                th {
+                    &.table-btn {
+                        display: none;
+                    }
+                    p {
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+            tbody {
+                td {
+                    &.table-btn {
+                        display: none;
+                    }
+                    p {
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
 }

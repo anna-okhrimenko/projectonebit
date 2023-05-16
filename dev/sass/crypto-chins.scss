@@ -21,6 +21,9 @@
         thead {
             th {
                 padding: 35px;
+                &.price {
+                    display: none;
+                }
             }
             p {
                 text-align: start;
@@ -29,6 +32,7 @@
                 line-height: 25px;
                 color: $stroke-color;
             }
+            
         }
         tbody {
             tr:nth-child(odd) {
@@ -56,6 +60,9 @@
 
                 .spred.up {
                     color: $accent-color;
+                }
+                &.price {
+                    display: none;
                 }
             }
 

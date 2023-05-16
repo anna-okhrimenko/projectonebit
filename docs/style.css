@@ -88,6 +88,9 @@ section {
   color: #8E938C;
   margin-bottom: 60px;
 }
+.title.left {
+  text-align: left;
+}
 
 .dropdown {
   min-width: 200px;
@@ -974,6 +977,163 @@ footer .footer-botom_text .privacy a:first-child {
   margin-right: 40px;
 }
 
+.banner-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.banner-block .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 705px;
+}
+.banner-block .banner-content .title {
+  margin-bottom: 80px;
+}
+.banner-block .banner-content .basis-title {
+  font-size: 58px;
+  line-height: 70px;
+}
+.banner-block .banner-content .basis-title,
+.banner-block .banner-content .basis-subtitle {
+  text-align: start;
+}
+.banner-block .banner-content .banner-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.banner-block .banner-content .banner-links-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+.banner-block .banner-content .banner-links-item a {
+  text-decoration: none;
+  color: #B1FF5C;
+}
+.banner-block .banner-img {
+  max-width: 665px;
+  border-radius: 30px;
+}
+.banner-block .banner-img img {
+  width: 100%;
+}
+
+.crypto-chins .title {
+  display: flex;
+  align-items: center;
+}
+.crypto-chins .title .basis-title {
+  margin-right: 20px;
+}
+.crypto-chins .title .dropdown .select {
+  border: 1px solid #4F4F4F;
+  border-radius: 50px;
+}
+.crypto-chins table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+.crypto-chins table thead th {
+  padding: 35px;
+}
+.crypto-chins table thead th.price {
+  display: none;
+}
+.crypto-chins table thead p {
+  text-align: start;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4F4F4F;
+}
+.crypto-chins table tbody tr:nth-child(odd) {
+  background: #10100E;
+  border-radius: 8px;
+}
+.crypto-chins table tbody td {
+  padding: 35px;
+}
+.crypto-chins table tbody td p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #F7FFEE;
+}
+.crypto-chins table tbody td p span {
+  color: #4F4F4F;
+  margin-left: 10px;
+}
+.crypto-chins table tbody td img {
+  margin-right: 12px;
+}
+.crypto-chins table tbody td .spred.down {
+  color: #FF4646;
+}
+.crypto-chins table tbody td .spred.up {
+  color: #B1FF5C;
+}
+.crypto-chins table tbody td.price {
+  display: none;
+}
+.crypto-chins table tbody tr p:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-review .testimonials-review_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 60px;
+}
+.testimonials-review .testimonials-review_cards .review_cards-block {
+  max-width: 705px;
+  padding: 40px 40px 40px 50px;
+  border-radius: 15px;
+  background-color: #10100E;
+  color: #4F4F4F;
+  font-weight: 400;
+}
+.testimonials-review .testimonials-review_cards .review_cards-block .review-person_name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  color: #F7FFEE;
+}
+.testimonials-review .testimonials-review_cards .review_cards-block .review-person_text {
+  max-height: 230px;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+.testimonials-review .testimonials-review_cards .review_cards-block .review-person_text.text-open {
+  max-height: fit-content;
+}
+.testimonials-review .testimonials-review_cards .review_cards-block .review-person_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials-review .testimonials-review_cards .review_cards-block .review-person_data {
+  font-size: 18px;
+  line-height: 23px;
+}
+.testimonials-review .testimonials-review_cards .review_cards-block:nth-child(odd) {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+.testimonials-review .testimonials-review_cards .review_cards-block:nth-child(even) {
+  margin-bottom: 30px;
+}
+.testimonials-review .review-btn {
+  width: 100%;
+}
+
 @media screen and (max-width: 1139px) {
   section {
     margin-bottom: 200px;
@@ -1098,6 +1258,22 @@ footer .footer-botom_text .privacy a:first-child {
     font-size: 28px;
     line-height: 36px;
   }
+  .crypto-chins table thead th {
+    padding: 25px;
+  }
+  .crypto-chins table tbody td {
+    padding: 25px;
+  }
+  .crypto-chins table tbody td p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .crypto-chins table tbody td p span {
+    margin-left: 9px;
+  }
+  .crypto-chins table tbody td img {
+    margin-right: 11px;
+  }
 }
 @media screen and (max-width: 991px) {
   section {
@@ -1113,6 +1289,9 @@ footer .footer-botom_text .privacy a:first-child {
   .title .basis-subtitle {
     font-size: 22px;
     line-height: 30px;
+  }
+  .title.left {
+    text-align: center;
   }
   .slider {
     position: relative;
@@ -1222,11 +1401,75 @@ footer .footer-botom_text .privacy a:first-child {
   footer .footer-body .social-media {
     margin: 0;
   }
+  .testimonials-review .testimonials-review_cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 60px;
+    justify-items: center;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block:nth-child(odd) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block:nth-child(even) {
+    margin-bottom: 30px;
+  }
+  .banner-block {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .banner-block .banner-content {
+    width: 100%;
+  }
+  .banner-block .banner-content .title {
+    margin-bottom: 40px;
+  }
+  .banner-block .banner-content .title .basis-title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .banner-block .banner-img {
+    margin-bottom: 32px;
+  }
+  .banner-block .banner-links {
+    flex-direction: column;
+  }
+  .banner-block button.btn.btn-primary {
+    width: 100%;
+  }
+  .crypto-chins table thead th.bill {
+    display: none;
+  }
+  .crypto-chins table thead th.price {
+    display: initial;
+  }
+  .crypto-chins table tbody td.bill {
+    display: none;
+  }
+  .crypto-chins table tbody td.price {
+    display: initial;
+  }
 }
 @media screen and (max-width: 767px) {
   .first-block,
   .second-block {
     flex-direction: column;
+  }
+  .crypto-chins .title {
+    flex-wrap: wrap;
+  }
+  .crypto-chins table thead th.table-btn {
+    display: none;
+  }
+  .crypto-chins table thead th p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .crypto-chins table tbody td.table-btn {
+    display: none;
+  }
+  .crypto-chins table tbody td p {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1475,149 +1718,35 @@ footer .footer-botom_text .privacy a:first-child {
   footer .footer-botom_text .privacy {
     display: none;
   }
-}
-.banner-block {
-  display: flex;
-}
-.banner-block .banner-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  max-width: 705px;
-}
-.banner-block .banner-content .title {
-  margin-bottom: 80px;
-}
-.banner-block .banner-content .basis-title {
-  font-size: 58px;
-  line-height: 70px;
-}
-.banner-block .banner-content .basis-title,
-.banner-block .banner-content .basis-subtitle {
-  text-align: start;
-}
-.banner-block .banner-content .banner-links {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-.banner-block .banner-content .banner-links-item {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-}
-.banner-block .banner-content .banner-links-item a {
-  text-decoration: none;
-  color: #B1FF5C;
-}
-
-.crypto-chins .title {
-  display: flex;
-  align-items: center;
-}
-.crypto-chins .title .basis-title {
-  margin-right: 20px;
-}
-.crypto-chins .title .dropdown .select {
-  border: 1px solid #4F4F4F;
-  border-radius: 50px;
-}
-.crypto-chins table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  width: 100%;
-}
-.crypto-chins table thead th {
-  padding: 35px;
-}
-.crypto-chins table thead p {
-  text-align: start;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  color: #4F4F4F;
-}
-.crypto-chins table tbody tr:nth-child(odd) {
-  background: #10100E;
-  border-radius: 8px;
-}
-.crypto-chins table tbody td {
-  padding: 35px;
-}
-.crypto-chins table tbody td p {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
-  color: #F7FFEE;
-}
-.crypto-chins table tbody td p span {
-  color: #4F4F4F;
-  margin-left: 10px;
-}
-.crypto-chins table tbody td img {
-  margin-right: 12px;
-}
-.crypto-chins table tbody td .spred.down {
-  color: #FF4646;
-}
-.crypto-chins table tbody td .spred.up {
-  color: #B1FF5C;
-}
-.crypto-chins table tbody tr p:first-child {
-  display: flex;
-  align-items: center;
-}
-
-.testimonials-review .basis-title {
-  text-align: left;
-}
-.testimonials-review .testimonials-review_cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 60px;
-}
-.testimonials-review .testimonials-review_cards .review_cards-block {
-  max-width: 705px;
-  padding: 40px 40px 40px 50px;
-  border-radius: 15px;
-  background-color: #10100E;
-  color: #4F4F4F;
-  font-weight: 400;
-}
-.testimonials-review .testimonials-review_cards .review_cards-block .review-person_name {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 40px;
-  margin-bottom: 20px;
-  color: #F7FFEE;
-}
-.testimonials-review .testimonials-review_cards .review_cards-block .review-person_text {
-  max-height: 230px;
-  overflow: hidden;
-  font-size: 20px;
-  line-height: 34px;
-  margin-bottom: 40px;
-}
-.testimonials-review .testimonials-review_cards .review_cards-block .review-person_text.text-open {
-  max-height: fit-content;
-}
-.testimonials-review .testimonials-review_cards .review_cards-block .review-person_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.testimonials-review .testimonials-review_cards .review_cards-block .review-person_data {
-  font-size: 18px;
-  line-height: 23px;
-}
-.testimonials-review .testimonials-review_cards .review_cards-block:nth-child(odd) {
-  margin-bottom: 30px;
-  margin-right: 30px;
-}
-.testimonials-review .testimonials-review_cards .review_cards-block:nth-child(even) {
-  margin-bottom: 30px;
-}
-.testimonials-review .review-btn {
-  width: 100%;
+  .testimonials-review .testimonials-review_cards {
+    margin-bottom: 40px;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block {
+    padding: 24px;
+    border: 1px solid #4F4F4F;
+    border-radius: 12px;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block .review-person_name {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block .review-person_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block .review-person_data {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block .btn-open {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block:nth-child(odd) {
+    margin-bottom: 20px;
+  }
+  .testimonials-review .testimonials-review_cards .review_cards-block:nth-child(even) {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

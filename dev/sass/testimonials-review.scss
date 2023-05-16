@@ -1,10 +1,8 @@
 .testimonials-review {
-    .basis-title {
-        text-align: left;
-    }
+    
     .testimonials-review_cards {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         margin-bottom: 60px;
         .review_cards-block {
             max-width: 705px;
