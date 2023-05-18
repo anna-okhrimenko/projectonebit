@@ -153,3 +153,63 @@ eyeImg.forEach(function (eye) {
         
     });
 });
+
+
+//validPassword//
+const password = document.querySelector('.password');
+const widthPass = document.querySelector('.min-width');
+const upperLetter = document.querySelector('.upper-letter');
+const lowerLetter = document.querySelector('.lower-letter');
+const numericPass = document.querySelector('.numbers');
+const specialSymbol = document.querySelector('.special-symbol');
+
+password.addEventListener('keyup', (e) => {
+    validationPassword();
+})
+
+function validationPassword() {
+    var uppercase = new RegExp('(?=.*[A-ZА-ЯЇЄІ])');
+    var lowcase = new RegExp('(?=.*[a-zа-яїєі])');
+    var numbers = new RegExp('(?=.*[0-9])');
+    var sumbol = new RegExp('(?=.*[!@\$%\^&\*])');
+    
+    if(uppercase.test(password.value)) {
+        upperLetter.classList.add('valid');
+        upperLetter.classList.remove('novalid')
+    } else {
+        upperLetter.classList.add('novalid');
+        upperLetter.classList.remove('valid');
+    }
+
+    if(lowcase.test(password.value)) {
+        lowerLetter.classList.add('valid');
+        lowerLetter.classList.remove('novalid')
+    } else {
+        lowerLetter.classList.add('novalid');
+        lowerLetter.classList.remove('valid');
+    }
+
+    if(numbers.test(password.value)) {
+        numericPass.classList.add('valid');
+        numericPass.classList.remove('novalid')
+    } else {
+        numericPass.classList.add('novalid');
+        numericPass.classList.remove('valid');
+    }
+
+    if(sumbol.test(password.value)) {
+        specialSymbol.classList.add('valid');
+        specialSymbol.classList.remove('novalid')
+    } else {
+        specialSymbol.classList.add('novalid');
+        specialSymbol.classList.remove('valid');
+    }
+
+    if(password.value.length >= 8) {
+        widthPass.classList.add('valid');
+        widthPass.classList.remove('novalid')
+    } else {
+        widthPass.classList.add('novalid');
+        widthPass.classList.remove('valid')
+    } 
+}

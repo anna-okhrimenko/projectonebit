@@ -1240,7 +1240,13 @@ aside .sidebar-block:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.tips .valid {
+  color: #B1FF5C;
+}
+.tips .novalid {
+  color: #FF3D3D;
 }
 
 @media screen and (max-width: 1139px) {
