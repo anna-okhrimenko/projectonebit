@@ -92,6 +92,24 @@ section {
   text-align: left;
 }
 
+.title-profile {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.title-profile h5 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #F7FFEE;
+  margin-bottom: 20px;
+}
+.title-profile p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #8E938C;
+}
+
 .dropdown {
   min-width: 200px;
   position: relative;
@@ -1132,6 +1150,97 @@ footer .footer-botom_text .privacy a:first-child {
 }
 .testimonials-review .review-btn {
   width: 100%;
+}
+
+.profile {
+  display: flex;
+  margin-top: 160px;
+}
+
+.profile aside .title.left {
+  margin-bottom: 60px;
+}
+
+aside {
+  margin-top: -120px;
+  margin-right: 150px;
+}
+aside .sidebar-block {
+  max-width: 338px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #F7FFEE;
+  padding: 41px 40px;
+  text-align: left;
+  background: #10100E;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+}
+aside .sidebar-block:hover {
+  color: #B1FF5C;
+  background-color: #080807;
+}
+aside .sidebar-block:focus {
+  color: #080807;
+  background-color: #B1FF5C;
+}
+
+.personal-info {
+  width: 950px;
+}
+.personal-info .profile-form {
+  display: grid;
+  gap: 30px;
+}
+.personal-info .profile-form input {
+  width: 100%;
+  padding: 30px 54px 30px 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #F7FFEE;
+  background: #10100E;
+  border: 1px solid #4F4F4F;
+  border-radius: 8px;
+}
+.personal-info .profile-form input:focus-visible {
+  outline: #42882A solid 1px;
+}
+.personal-info .profile-form input:focus-visible::placeholder {
+  color: transparent;
+}
+.personal-info .profile-form input::placeholder {
+  transition: 0.5s;
+}
+.personal-info .profile-form #telegram {
+  margin-bottom: 60px;
+}
+
+.new-pwd,
+.repeat-pwd {
+  position: relative;
+}
+
+.show-pass {
+  display: block;
+  position: absolute;
+  top: 31px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.tips {
+  display: flex;
+  gap: 26px;
+  padding: 14px 8px;
+}
+.tips > div {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 1139px) {

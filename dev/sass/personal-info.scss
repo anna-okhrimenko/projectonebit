@@ -1,0 +1,97 @@
+.profile {
+    display: flex;
+    margin-top: 160px;
+    
+}
+
+.profile aside .title.left {
+        margin-bottom: 60px;
+}
+
+aside {
+    margin-top: -120px;
+    margin-right: 150px;
+    
+    
+    .sidebar-block {
+        max-width: 338px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: $titles-color;
+        padding: 41px 40px;
+        text-align: left;
+        background: $input-card-color;
+        border-radius: 10px;
+        display: block;
+        text-decoration: none;
+        &:hover {
+            color: $accent-color;
+            background-color: $background-color;
+        }
+        &:focus {
+            color: $background-color;
+            background-color: $accent-color;
+        }
+
+    }
+}
+.personal-info {
+    width: 950px;
+    .profile-form {
+        display: grid;
+        gap: 30px;
+        
+        input {
+            width: 100%;
+            padding: 30px 54px 30px 30px ;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: $titles-color;
+            background: $input-card-color;
+            border: 1px solid $stroke-color;
+            border-radius: 8px;
+            
+            &:focus-visible {
+                outline: $accent-col-2 solid 1px;
+                
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+            &::placeholder {
+                transition: .5s;
+            }
+        
+        }
+        #telegram {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.new-pwd,
+.repeat-pwd {
+    position: relative;
+}
+.show-pass {
+    display: block;
+    position: absolute;
+    top: 31px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.tips {
+    display: flex;
+    gap: 26px;
+    padding: 14px 8px;
+    & > div {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+}
+

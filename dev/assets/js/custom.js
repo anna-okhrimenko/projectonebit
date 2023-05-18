@@ -135,3 +135,21 @@ const closeReviews = (currentIndex) => {
         }
     });
 }
+
+//show/hide password//
+
+const eyeImg = document.querySelectorAll('.show-pass');
+eyeImg.forEach(function (eye) {
+    eye.addEventListener('click', () => {
+        if(eye.classList.contains('open-eye')) {
+            eye.classList.remove('open-eye'); 
+            eye.setAttribute("src", "assets/img/eye-close-icon.png");
+            eye.previousElementSibling.type = "text"
+        } else {
+            eye.classList.add('open-eye'); 
+            eye.setAttribute("src", "assets/img/eye-icon.png");
+            eye.previousElementSibling.type = "password"
+        }
+        
+    });
+});
