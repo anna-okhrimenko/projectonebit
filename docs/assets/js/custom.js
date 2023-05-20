@@ -30,6 +30,10 @@ $(document).ready(function () {
             $('.slider').removeClass('bckgr-shiny');
         }
     });
+
+    $("input[type=file]").change(function (e) {
+        $(this).parents(".uploadFile").find(".filename").text(e.target.files[0].name);
+    });
 });
 
 

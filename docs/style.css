@@ -90,6 +90,7 @@ section {
 }
 .title.left {
   text-align: left;
+  max-width: 705px;
 }
 
 .title-profile {
@@ -108,6 +109,12 @@ section {
   font-size: 20px;
   line-height: 34px;
   color: #8E938C;
+}
+.title-profile span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FF3D3D;
 }
 
 .dropdown {
@@ -1247,6 +1254,130 @@ aside .sidebar-block:focus {
 }
 .tips .novalid {
   color: #FF3D3D;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #4F4F4F;
+  border-bottom: 1px solid #4F4F4F;
+}
+
+.personal-info .dropdown .menu {
+  width: 100%;
+}
+.personal-info .dropdown .select {
+  padding: 30px;
+}
+.personal-info .menu.menu-open {
+  top: 90px;
+}
+
+.gender-radio {
+  display: flex;
+}
+
+[type=radio]:checked,
+[type=radio]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type=radio]:checked + label,
+[type=radio]:not(:checked) + label {
+  position: relative;
+  margin-right: 50px;
+  padding-top: 3px;
+  padding-left: 43px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+[type=radio]:checked + label:before,
+[type=radio]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #B1FF5C;
+  border-radius: 100%;
+  background: #10100E;
+}
+
+[type=radio]:checked + label:after,
+[type=radio]:not(:checked) + label:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #B1FF5C;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type=radio]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type=radio]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.uploadFile {
+  overflow: hidden;
+  resize: none;
+  position: relative;
+  width: 100%;
+  padding: 60px 54px 60px 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #F7FFEE;
+  background: #10100E;
+  border: 1px dashed #4F4F4F;
+  border-radius: 12px;
+  text-align: center;
+}
+.uploadFile [type=file] {
+  cursor: pointer !important;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  text-align: right;
+  top: 0px;
+  z-index: 1;
+}
+.uploadFile .filename {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #F7FFEE;
+}
+.uploadFile #sendfile {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F4F4F;
+}
+.uploadFile #sendfile span {
+  color: #B1FF5C;
 }
 
 @media screen and (max-width: 1139px) {
