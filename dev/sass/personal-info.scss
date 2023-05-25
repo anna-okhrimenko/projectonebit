@@ -29,7 +29,8 @@ aside {
             color: $accent-color;
             background-color: $background-color;
         }
-        &:focus {
+        
+        &.active {
             color: $background-color;
             background-color: $accent-color;
         }
@@ -42,7 +43,8 @@ aside {
         display: grid;
         gap: 30px;
         
-        input {
+        input,
+        .document-button {
             width: 100%;
             padding: 30px 54px 30px 30px ;
             font-weight: 400;
@@ -112,6 +114,9 @@ aside {
     line-height: 34px;
     color: $stroke-color;
     border-bottom: 1px solid $stroke-color;
+    &.no-border {
+        border: none;
+    }
 }
 
 .personal-info {
@@ -146,6 +151,9 @@ aside {
     line-height: 20px;
     display: inline-block;
     color: #666;
+    &:hover {
+        color: #B1FF5C;
+    }
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
@@ -158,12 +166,18 @@ aside {
     border: 1px solid #B1FF5C;
     border-radius: 100%;
     background: $input-card-color;
+    
 }
+[type="radio"]:not(:checked) + label:before {
+    border: 1px solid $stroke-color;
+   
+}
+
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
     content: '';
-    width: 11px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
     background: $accent-color;
     position: absolute;
     top: 8px;
@@ -182,6 +196,27 @@ aside {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
+.adress {
+    display: flex;
+    gap: 30px;
+}
+
+.document-btns {
+    display: flex;
+    gap: 30px;
+    .document-button {
+        cursor: pointer;
+        &:hover {
+            border: 1px solid #B1FF5C;
+        }
+        &.selected-btn {
+            background: #152108;
+            border: 1px solid #B1FF5C;
+        }
+    }
+}
+
     
 
 .uploadFile {
@@ -232,4 +267,88 @@ aside {
         }
     }
 }
-  
+
+input[type=checkbox] {
+    display:none;  
+}
+
+    .check-box_block {
+        position:relative;
+        span {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            color: $titles-color;
+            margin: 0px 0 0 19px;
+        }
+        .check-box-subtitle {
+            position: absolute;
+            left: 55px;
+            bottom: -14px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #8E938C;
+        }
+        .wrap {
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            padding:30px 30px 5px;
+        }
+        label {
+            width: 56px;
+            height: 32px;
+            box-sizing:border-box;
+            border: 1px solid $stroke-color;
+            float:left;
+            border-radius: 50px;
+            position:relative;
+            cursor:pointer;
+            transition:.3s ease;
+            &:hover {
+                border: 1px solid #B1FF5C;
+            }
+        }
+
+        input[type=checkbox]:checked + label {
+            background: #152108;
+            border: 1px solid #B1FF5C;
+        }
+        input[type=checkbox]:checked + label:before {
+            left:30px;
+        }
+        label:before {
+            transition:.3s ease;
+            content:'';
+            width:20px;
+            height:20px;
+            position:absolute;
+            background: $titles-color;
+            left: 5px;
+            top: 5px;
+            box-sizing:border-box;
+            color:black;
+            border-radius:100px;
+        }
+    }
+
+.Zebra_DatePicker {
+    width: 320.6px;
+    top: 2318px;
+    right: 11%;
+    background: $input-card-color;
+    border: 1px solid $stroke-color;
+    box-shadow: none;
+    color: $titles-color;
+    & .dp_body .dp_hover {
+        background: $accent-color;
+        color: $input-card-color;
+    }
+    & .dp_actions .dp_caption .dp_hover {
+        background: $accent-color;
+        color: $input-card-color;
+    }
+}
+

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/zebra_datepicker.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -141,14 +142,13 @@
                             <div class="basis-title">профіль</div>
                         </div>
                         <div class="sidebar">
-                            <a class="sidebar-block" href="profile.html">особиста інформація</a>
-                            <a class="sidebar-block" href="profile-password.html">пароль</a>
+                            <a class="sidebar-block " href="profile.html">особиста інформація</a>
+                            <a class="sidebar-block " href="profile-password.html">пароль</a>
                             <a class="sidebar-block" href="#">історія операцій</a>
-                            <a class="sidebar-block" href="profile-verification.html">верифікація</a>
-                            <a class="sidebar-block" href="#">реферальна програма <span>soon</span></a>
+                            <a class="sidebar-block active" href="profile-verification.html">верифікація</a>
+                            <a class="sidebar-block " href="profile-referal.html">реферальна програма <span>soon</span></a>
                         </div>
                     </aside>
-
                     <div class="personal-info">
                         <div class="title-profile">
                             <h5>верифікація <span>верифікацію не пройдено</span></h5>
@@ -255,30 +255,34 @@
                             <div class="label">
                                 підтвердження особистості
                             </div>
-                            <div class="documents">
-                                <div class="label no-border">
-                                    тип документу
-                                </div>
-                                <div class="document-btns">
-                                    <button>паспорт</button>
-                                    <button>закордонний паспорт</button>
-                                    <button>ID-картка</button>
-                                    <button>посвідчення водія</button>
-                                </div>
+
+                            <div class="label no-border">
+                                тип документу
                             </div>
+                            <div class="document-btns">
+                                <div class="document-button">паспорт</div>
+                                <div class="document-button">закордонний паспорт</div>
+                                <div class="document-button">ID-картка</div>
+                                <div class="document-button">посвідчення водія</div>
+                            </div>
+
                             <div class="label no-border">
                                 завантажте документ
                             </div>
                             <label class="uploadFile">
                                 <span class="filename">перша сторінка</span>
                                 <p id="sendfile">перетягніть сюди або <span>оберіть файл</span> </p>
-                                <input type="file" class="inputfile form-control" name="file">
+                                <input type="file" class="inputfile form-control" name="files" multiple>
                             </label>
                             <div>
-                                <input type="checkbox" id="no-doc-data" name="no-doc-data" checked>
-                                <label for="no-doc-data">немає терміну дії</label>
+                                <div class="check-box_block">
+                                    <span>немає терміну дії</span>
+                                    <span class="check-box-subtitle">за умови відсутності терміну дії документу</span>
+                                    <input data-index="1" id="no-doc-data" class="no-doc-data" name="no-doc-data" type="checkbox" />
+                                    <label for="no-doc-data"></label>
+                                </div>
                             </div>
-                            <input type="date" id="data-doc" name="data-doc" value="" min="1900-01-01" max="2023-12-31">>
+                            <input type="date" id="data-doc" name="data-doc" value="" min="1900-01-01" max="2023-12-31" placeholder="термін дії документу">
                             <button class="btn btn-primary">продовжити</button>
                         </form>
 
@@ -349,6 +353,7 @@
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/zebra_datepicker.src.js"></script>
     <script async src="assets/js/custom.js"></script>
 </body>
 

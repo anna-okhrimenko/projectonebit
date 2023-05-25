@@ -1,0 +1,12 @@
+<aside>
+    <div class="title left">
+        <div class="basis-title">профіль</div>
+    </div>
+    <div  class="sidebar">
+        <a class="sidebar-block @@if (context.page === 'profile') {active}" href="profile.html">особиста інформація</a>
+        <a class="sidebar-block @@if (context.page === 'password') {active}" href="profile-password.html">пароль</a>
+        <a class="sidebar-block" href="#">історія операцій</a>
+        <a class="sidebar-block @@if (context.page === 'verification') {active}" href="profile-verification.html">верифікація</a>
+        <a class="sidebar-block @@if (context.page === 'referal') {active}" href="profile-referal.html">реферальна програма <span>soon</span></a>
+    </div>
+</aside>

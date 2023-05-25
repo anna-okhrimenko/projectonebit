@@ -1189,7 +1189,7 @@ aside .sidebar-block:hover {
   color: #B1FF5C;
   background-color: #080807;
 }
-aside .sidebar-block:focus {
+aside .sidebar-block.active {
   color: #080807;
   background-color: #B1FF5C;
 }
@@ -1201,7 +1201,8 @@ aside .sidebar-block:focus {
   display: grid;
   gap: 30px;
 }
-.personal-info .profile-form input {
+.personal-info .profile-form input,
+.personal-info .profile-form .document-button {
   width: 100%;
   padding: 30px 54px 30px 30px;
   font-weight: 400;
@@ -1212,13 +1213,16 @@ aside .sidebar-block:focus {
   border: 1px solid #4F4F4F;
   border-radius: 8px;
 }
-.personal-info .profile-form input:focus-visible {
+.personal-info .profile-form input:focus-visible,
+.personal-info .profile-form .document-button:focus-visible {
   outline: #42882A solid 1px;
 }
-.personal-info .profile-form input:focus-visible::placeholder {
+.personal-info .profile-form input:focus-visible::placeholder,
+.personal-info .profile-form .document-button:focus-visible::placeholder {
   color: transparent;
 }
-.personal-info .profile-form input::placeholder {
+.personal-info .profile-form input::placeholder,
+.personal-info .profile-form .document-button::placeholder {
   transition: 0.5s;
 }
 .personal-info .profile-form #telegram {
@@ -1263,6 +1267,9 @@ aside .sidebar-block:focus {
   color: #4F4F4F;
   border-bottom: 1px solid #4F4F4F;
 }
+.label.no-border {
+  border: none;
+}
 
 .personal-info .dropdown .menu {
   width: 100%;
@@ -1295,6 +1302,10 @@ aside .sidebar-block:focus {
   display: inline-block;
   color: #666;
 }
+[type=radio]:checked + label:hover,
+[type=radio]:not(:checked) + label:hover {
+  color: #B1FF5C;
+}
 
 [type=radio]:checked + label:before,
 [type=radio]:not(:checked) + label:before {
@@ -1309,11 +1320,15 @@ aside .sidebar-block:focus {
   background: #10100E;
 }
 
+[type=radio]:not(:checked) + label:before {
+  border: 1px solid #4F4F4F;
+}
+
 [type=radio]:checked + label:after,
 [type=radio]:not(:checked) + label:after {
   content: "";
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   background: #B1FF5C;
   position: absolute;
   top: 8px;
@@ -1333,6 +1348,26 @@ aside .sidebar-block:focus {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.adress {
+  display: flex;
+  gap: 30px;
+}
+
+.document-btns {
+  display: flex;
+  gap: 30px;
+}
+.document-btns .document-button {
+  cursor: pointer;
+}
+.document-btns .document-button:hover {
+  border: 1px solid #B1FF5C;
+}
+.document-btns .document-button.selected-btn {
+  background: #152108;
+  border: 1px solid #B1FF5C;
 }
 
 .uploadFile {
@@ -1378,6 +1413,89 @@ aside .sidebar-block:focus {
 }
 .uploadFile #sendfile span {
   color: #B1FF5C;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.check-box_block {
+  position: relative;
+}
+.check-box_block span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #F7FFEE;
+  margin: 0px 0 0 19px;
+}
+.check-box_block .check-box-subtitle {
+  position: absolute;
+  left: 55px;
+  bottom: -14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8E938C;
+}
+.check-box_block .wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 30px 5px;
+}
+.check-box_block label {
+  width: 56px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #4F4F4F;
+  float: left;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.check-box_block label:hover {
+  border: 1px solid #B1FF5C;
+}
+.check-box_block input[type=checkbox]:checked + label {
+  background: #152108;
+  border: 1px solid #B1FF5C;
+}
+.check-box_block input[type=checkbox]:checked + label:before {
+  left: 30px;
+}
+.check-box_block label:before {
+  transition: 0.3s ease;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #F7FFEE;
+  left: 5px;
+  top: 5px;
+  box-sizing: border-box;
+  color: black;
+  border-radius: 100px;
+}
+
+.Zebra_DatePicker {
+  width: 320.6px;
+  top: 2318px;
+  right: 11%;
+  background: #10100E;
+  border: 1px solid #4F4F4F;
+  box-shadow: none;
+  color: #F7FFEE;
+}
+.Zebra_DatePicker .dp_body .dp_hover {
+  background: #B1FF5C;
+  color: #10100E;
+}
+.Zebra_DatePicker .dp_actions .dp_caption .dp_hover {
+  background: #B1FF5C;
+  color: #10100E;
 }
 
 @media screen and (max-width: 1139px) {

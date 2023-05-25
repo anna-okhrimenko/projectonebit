@@ -1,19 +1,9 @@
 <section>
     <div class="container">
         <div class="profile">
-            <aside>
-                <div class="title left">
-                    <div class="basis-title">профіль</div>
-                </div>
-                <div  class="sidebar">
-                    <a class="sidebar-block" href="profile.html">особиста інформація</a>
-                    <a class="sidebar-block" href="profile-password.html">пароль</a>
-                    <a class="sidebar-block" href="#">історія операцій</a>
-                    <a class="sidebar-block" href="profile-verification.html">верифікація</a>
-                    <a class="sidebar-block" href="#">реферальна програма <span>soon</span></a>
-                </div>
-            </aside>
-    
+            @@include('profile-aside.html', {
+                "page": "profile"
+            })
             <div class="personal-info">
                 <div class="title-profile">
                     <h5>особиста інформація</h5>

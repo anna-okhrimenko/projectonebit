@@ -34,6 +34,8 @@ $(document).ready(function () {
     $("input[type=file]").change(function (e) {
         $(this).parents(".uploadFile").find(".filename").text(e.target.files[0].name);
     });
+
+    $('#data-birth, #data-doc').Zebra_DatePicker();
 });
 
 
@@ -140,6 +142,8 @@ const closeReviews = (currentIndex) => {
     });
 }
 
+
+
 //show/hide password//
 
 const eyeImg = document.querySelectorAll('.show-pass');
@@ -166,10 +170,12 @@ const upperLetter = document.querySelector('.upper-letter');
 const lowerLetter = document.querySelector('.lower-letter');
 const numericPass = document.querySelector('.numbers');
 const specialSymbol = document.querySelector('.special-symbol');
+if(password) {
+    password.addEventListener('keyup', (e) => {
+        validationPassword();
+    })
+}
 
-password.addEventListener('keyup', (e) => {
-    validationPassword();
-})
 
 function validationPassword() {
     var uppercase = new RegExp('(?=.*[A-ZА-ЯЇЄІ])');
@@ -216,4 +222,27 @@ function validationPassword() {
         widthPass.classList.add('novalid');
         widthPass.classList.remove('valid')
     } 
+}
+
+const docBtns = document.querySelectorAll('.document-button');
+console.log(docBtns);
+docBtns.forEach(function (docButton) {
+    docButton.addEventListener('click', () => {
+        changeDocBtns();
+        if(docButton.classList.contains('selected-btn')) {
+            docButton.classList.remove('selected-btn');
+        } else {
+            docButton.classList.add('selected-btn');
+        }
+    });
+});
+
+const changeDocBtns = (changeSelect) => {
+    docBtns.forEach(function (docButton, i) {
+        if(changeSelect != i) {
+            docButton.classList.remove('selected-btn');
+        } else {
+            null
+        }
+    });
 }
