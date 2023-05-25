@@ -1057,54 +1057,55 @@ footer .footer-botom_text .privacy a:first-child {
   border: 1px solid #4F4F4F;
   border-radius: 50px;
 }
-.crypto-chins table {
+
+table {
   border-spacing: 0;
   border-collapse: collapse;
   width: 100%;
 }
-.crypto-chins table thead th {
+table thead th {
   padding: 35px;
 }
-.crypto-chins table thead th.price {
+table thead th.price {
   display: none;
 }
-.crypto-chins table thead p {
+table thead p {
   text-align: start;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   color: #4F4F4F;
 }
-.crypto-chins table tbody tr:nth-child(odd) {
+table tbody tr:nth-child(odd) {
   background: #10100E;
   border-radius: 8px;
 }
-.crypto-chins table tbody td {
+table tbody td {
   padding: 35px;
 }
-.crypto-chins table tbody td p {
+table tbody td p {
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
   color: #F7FFEE;
 }
-.crypto-chins table tbody td p span {
+table tbody td p span {
   color: #4F4F4F;
   margin-left: 10px;
 }
-.crypto-chins table tbody td img {
+table tbody td img {
   margin-right: 12px;
 }
-.crypto-chins table tbody td .spred.down {
+table tbody td .spred.down {
   color: #FF4646;
 }
-.crypto-chins table tbody td .spred.up {
+table tbody td .spred.up {
   color: #B1FF5C;
 }
-.crypto-chins table tbody td.price {
+table tbody td.price {
   display: none;
 }
-.crypto-chins table tbody tr td:first-child p {
+table tbody tr td:first-child p {
   display: flex;
   align-items: center;
 }
@@ -1192,6 +1193,19 @@ aside .sidebar-block:hover {
 aside .sidebar-block.active {
   color: #080807;
   background-color: #B1FF5C;
+}
+aside .sidebar-block.active span {
+  background-color: #42882A;
+  color: #B1FF5C;
+}
+aside .sidebar-block span {
+  color: #10100E;
+  background-color: #B1FF5C;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .personal-info {
@@ -1496,6 +1510,26 @@ input[type=checkbox] {
 .Zebra_DatePicker .dp_actions .dp_caption .dp_hover {
   background: #B1FF5C;
   color: #10100E;
+}
+
+.personal-info table {
+  margin-bottom: 70px;
+}
+.personal-info table .transaction-info {
+  padding-left: 0;
+}
+.personal-info table .transaction-info p {
+  display: flex;
+  flex-direction: column;
+}
+.personal-info table .transaction-info p span {
+  margin-left: 0;
+}
+.personal-info table p.spred {
+  text-align: end;
+}
+.personal-info .review-btn {
+  width: 100%;
 }
 
 @media screen and (max-width: 1139px) {

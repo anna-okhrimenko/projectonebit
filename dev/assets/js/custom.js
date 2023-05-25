@@ -136,9 +136,7 @@ const closeReviews = (currentIndex) => {
             const openBtn = review.closest('.review_cards-block').querySelector('.btn-open');
             review.classList.remove('text-open');
             openBtn.innerHTML = "читати повністю"
-        } else {
-            null
-        }
+        } 
     });
 }
 
@@ -241,8 +239,18 @@ const changeDocBtns = (changeSelect) => {
     docBtns.forEach(function (docButton, i) {
         if(changeSelect != i) {
             docButton.classList.remove('selected-btn');
-        } else {
-            null
         }
     });
 }
+
+const docCheckBox = document.querySelector('#no-doc-data');
+const docDataBox = document.querySelector('#data-doc');
+docCheckBox.addEventListener('click', () => {
+    if(docCheckBox.checked) {
+        docDataBox.style.display = 'none';
+    } else {
+        docDataBox.style.display = 'flex';
+    }
+});
+
+

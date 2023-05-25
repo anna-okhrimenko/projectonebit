@@ -33,6 +33,19 @@ aside {
         &.active {
             color: $background-color;
             background-color: $accent-color;
+            span {
+                background-color: $accent-col-2;
+                color: $accent-color;
+            }
+        }
+        span {
+            color: $input-card-color;
+            background-color: $accent-color;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
         }
 
     }
@@ -272,67 +285,69 @@ input[type=checkbox] {
     display:none;  
 }
 
-    .check-box_block {
+.check-box_block {
+    position:relative;
+    span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: $titles-color;
+        margin: 0px 0 0 19px;
+    }
+    .check-box-subtitle {
+        position: absolute;
+        left: 55px;
+        bottom: -14px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #8E938C;
+    }
+    .wrap {
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        padding:30px 30px 5px;
+    }
+    label {
+        width: 56px;
+        height: 32px;
+        box-sizing:border-box;
+        border: 1px solid $stroke-color;
+        float:left;
+        border-radius: 50px;
         position:relative;
-        span {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 23px;
-            color: $titles-color;
-            margin: 0px 0 0 19px;
-        }
-        .check-box-subtitle {
-            position: absolute;
-            left: 55px;
-            bottom: -14px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: #8E938C;
-        }
-        .wrap {
-            position: absolute;
-            left:50%;
-            top:50%;
-            transform:translate(-50%,-50%);
-            padding:30px 30px 5px;
-        }
-        label {
-            width: 56px;
-            height: 32px;
-            box-sizing:border-box;
-            border: 1px solid $stroke-color;
-            float:left;
-            border-radius: 50px;
-            position:relative;
-            cursor:pointer;
-            transition:.3s ease;
-            &:hover {
-                border: 1px solid #B1FF5C;
-            }
-        }
-
-        input[type=checkbox]:checked + label {
-            background: #152108;
+        cursor:pointer;
+        transition:.3s ease;
+        &:hover {
             border: 1px solid #B1FF5C;
         }
-        input[type=checkbox]:checked + label:before {
-            left:30px;
-        }
-        label:before {
-            transition:.3s ease;
-            content:'';
-            width:20px;
-            height:20px;
-            position:absolute;
-            background: $titles-color;
-            left: 5px;
-            top: 5px;
-            box-sizing:border-box;
-            color:black;
-            border-radius:100px;
-        }
     }
+
+    input[type=checkbox]:checked + label {
+        background: #152108;
+        border: 1px solid #B1FF5C;
+        
+    }
+    input[type=checkbox]:checked + label:before {
+        left:30px;
+    }
+    label:before {
+        transition:.3s ease;
+        content:'';
+        width:20px;
+        height:20px;
+        position:absolute;
+        background: $titles-color;
+        left: 5px;
+        top: 5px;
+        box-sizing:border-box;
+        color:black;
+        border-radius:100px;
+    }
+}
+
 
 .Zebra_DatePicker {
     width: 320.6px;
@@ -342,6 +357,7 @@ input[type=checkbox] {
     border: 1px solid $stroke-color;
     box-shadow: none;
     color: $titles-color;
+    
     & .dp_body .dp_hover {
         background: $accent-color;
         color: $input-card-color;
@@ -351,4 +367,31 @@ input[type=checkbox] {
         color: $input-card-color;
     }
 }
+
+//transaction-histiry/
+.personal-info {
+
+    table {
+        margin-bottom: 70px;
+        .transaction-info {
+            padding-left: 0;
+            p {
+                display: flex;
+                flex-direction: column;
+                span {
+                    margin-left: 0;
+                }
+            }
+        }
+        
+        & p.spred {
+            text-align: end;
+        }
+    }
+    
+    .review-btn {
+        width: 100%;
+    }
+}
+
 
