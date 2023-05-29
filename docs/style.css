@@ -359,7 +359,11 @@ header .header-btn_block .header-btn_list .header-btn_sublist {
 header .header-button {
   border: none;
 }
-header .header-mobile_modal {
+header .profile-mobile_modal.open-profile {
+  transform: translateY(0%);
+}
+header .header-mobile_modal,
+header .profile-mobile_modal {
   position: fixed;
   margin: 0 auto;
   padding: 20px;
@@ -372,44 +376,53 @@ header .header-mobile_modal {
   background-color: #080807;
   overflow-y: auto;
 }
-header .header-mobile_modal.open {
+header .header-mobile_modal.open,
+header .profile-mobile_modal.open {
   transform: translateY(0%);
 }
-header .header-mobile_modal .header-nav {
+header .header-mobile_modal .header-nav,
+header .profile-mobile_modal .header-nav {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
-header .header-mobile_modal .header-nav_list li {
+header .header-mobile_modal .header-nav_list li,
+header .profile-mobile_modal .header-nav_list li {
   margin-bottom: 32px;
 }
-header .header-mobile_modal .modal-head {
+header .header-mobile_modal .modal-head,
+header .profile-mobile_modal .modal-head {
   display: flex;
   justify-content: space-between;
   padding-bottom: 12px;
   margin-bottom: 32px;
   border-bottom: 1px solid #242424;
 }
-header .header-mobile_modal .modal-head_right {
+header .header-mobile_modal .modal-head_right,
+header .profile-mobile_modal .modal-head_right {
   display: flex;
   align-items: center;
 }
-header .header-mobile_modal .modal-head .header-logo_sublist {
+header .header-mobile_modal .modal-head .header-logo_sublist,
+header .profile-mobile_modal .modal-head .header-logo_sublist {
   left: -33px;
   background-color: #080807;
 }
-header .header-mobile_modal .modal-head .header-button {
+header .header-mobile_modal .modal-head .header-button,
+header .profile-mobile_modal .modal-head .header-button {
   border: none;
   padding: 15px 12px;
   background: #20251B;
   border-radius: 8px;
   cursor: pointer;
 }
-header .header-mobile_modal .modal-head .header-button .togler {
+header .header-mobile_modal .modal-head .header-button .togler,
+header .profile-mobile_modal .modal-head .header-button .togler {
   position: relative;
   background-color: rgba(255, 255, 255, 0);
 }
-header .header-mobile_modal .modal-head .header-button .togler::before {
+header .header-mobile_modal .modal-head .header-button .togler::before,
+header .profile-mobile_modal .modal-head .header-button .togler::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -419,7 +432,8 @@ header .header-mobile_modal .modal-head .header-button .togler::before {
   height: 2px;
   background-color: #B1FF5C;
 }
-header .header-mobile_modal .modal-head .header-button .togler::after {
+header .header-mobile_modal .modal-head .header-button .togler::after,
+header .profile-mobile_modal .modal-head .header-button .togler::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -429,11 +443,13 @@ header .header-mobile_modal .modal-head .header-button .togler::after {
   height: 2px;
   background-color: #B1FF5C;
 }
-header .header-mobile_modal .modal-body {
+header .header-mobile_modal .modal-body,
+header .profile-mobile_modal .modal-body {
   display: flex;
   flex-direction: column;
 }
-header .header-mobile_modal .modal-body .header-nav_list {
+header .header-mobile_modal .modal-body .header-nav_list,
+header .profile-mobile_modal .modal-body .header-nav_list {
   display: flex;
   flex-direction: column;
   margin-bottom: 128px;
@@ -906,6 +922,9 @@ header .header-mobile_modal .modal-body .header-nav_list {
   border-radius: 8px;
   object-fit: cover;
 }
+.social-media div:hover {
+  transform: scale(1.3);
+}
 .social-media div img {
   width: 24px;
   height: 24px;
@@ -931,6 +950,9 @@ footer .footer-body .social-media div {
   background: #141810;
   border-radius: 8px;
   object-fit: cover;
+}
+footer .footer-body .social-media div:hover {
+  transform: scale(1.3);
 }
 footer .footer-body .social-media div img {
   width: 24px;
@@ -977,6 +999,9 @@ footer .footer-body_contact li a img {
   background: #141810;
   border-radius: 8px;
   margin-right: 20px;
+}
+footer .footer-body_contact li a img:hover {
+  transform: scale(1.3);
 }
 footer .footer-botom_text {
   padding: 40px 0;
@@ -1671,6 +1696,12 @@ input[type=checkbox] {
   }
   .crypto-chins table tbody td img {
     margin-right: 11px;
+  }
+  aside {
+    display: none;
+  }
+  .personal-info {
+    margin: auto;
   }
 }
 @media screen and (max-width: 991px) {

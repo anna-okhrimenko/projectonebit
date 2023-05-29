@@ -99,6 +99,19 @@ modalBtnClose.addEventListener('click', () => {
     modal.classList.remove('open');
 });
 
+const profileModalOpen = document.querySelector('.profile-open');
+const profileModal = document.querySelector('.profile-mobile_modal');
+const profileModalClose = document.querySelector('.close-profile-modal');
+profileModalOpen.addEventListener('click', () => {
+    profileModal.classList.add('open-profile')
+    modal.classList.remove('open');
+});
+profileModalClose.addEventListener('click', () => {
+    profileModal.classList.remove('open-profile')
+    modal.classList.add('open');
+});
+
+
 //table change color spred//
 
 const spredList = document.querySelectorAll('.spred');
@@ -245,12 +258,15 @@ const changeDocBtns = (changeSelect) => {
 
 const docCheckBox = document.querySelector('#no-doc-data');
 const docDataBox = document.querySelector('#data-doc');
-docCheckBox.addEventListener('click', () => {
-    if(docCheckBox.checked) {
-        docDataBox.style.display = 'none';
-    } else {
-        docDataBox.style.display = 'flex';
-    }
-});
+if(docCheckBox) {
+    docCheckBox.addEventListener('click', () => {
+        if(docCheckBox.checked) {
+            docDataBox.style.display = 'none';
+        } else {
+            docDataBox.style.display = 'flex';
+        }
+    });
+
+}
 
 

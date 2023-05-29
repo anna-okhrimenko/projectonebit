@@ -196,8 +196,15 @@ header{
 	.header-button {
 		border: none;
 	}
+	
+	.profile-mobile_modal {
+		&.open-profile {
+			transform: translateY(0%);
+		}
+	}
 
-	.header-mobile_modal {
+	.header-mobile_modal,
+	.profile-mobile_modal {
 		
 		position: fixed;
 		margin: 0 auto;
