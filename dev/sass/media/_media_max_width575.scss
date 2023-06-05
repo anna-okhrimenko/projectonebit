@@ -370,4 +370,36 @@
         
     }
 
+    //profile//
+    .profile {
+        table tbody td {
+            padding: 15px 0 15px 0;
+        }
+        table tbody td p {
+            font-size: 14px;
+            line-height: 18px;
+            padding-right: 0;
+        }
+
+        .personal-info .profile-form .document-btns {
+          
+            .document-button {
+                padding: 12px 17px;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        .check-box_block {
+            font-size: 15px;
+            line-height: 19px;
+            .check-box-subtitle {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        .adress {
+            flex-direction: column;
+        }
+    }
+
 }

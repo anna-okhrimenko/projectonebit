@@ -194,156 +194,25 @@
     <main class="wrapper home">
         <section>
             <div class="container">
-                <div class="profile">
-                    <aside>
-                        <div class="title left">
-                            <div class="basis-title">профіль</div>
+                <div class="banner-block">
+                    <div class="banner-content">
+                        <div class="title">
+                            <div class="basis-title">
+                                помилка 404
+                            </div>
+                            <div class="basis-subtitle">
+                                <p>Щось пішло не так! Перевірте з’єднання з інтернетом</p>
+                            </div>
                         </div>
-                        <div class="sidebar">
-                            <a class="sidebar-block " href="profile.html">особиста інформація</a>
-                            <a class="sidebar-block " href="profile-password.html">пароль</a>
-                            <a class="sidebar-block " href="profile-history.html">історія операцій</a>
-                            <a class="sidebar-block active" href="profile-verification.html">верифікація</a>
-                            <a class="sidebar-block " href="profile-referal.html">реферальна програма <span>soon</span></a>
+                        <div class="banner-links">
+                            <button class="btn btn-primary">
+                                оновити сторінку
+                            </button>
+
                         </div>
-                    </aside>
-                    <div class="personal-info">
-                        <div class="title-profile">
-                            <h5>верифікація <span>верифікацію не пройдено</span></h5>
-                            <p>Пройдіть верифікацію особи та отримайте можливість здійснювати обмін фіатних валют та доступ до реферальної програми</p>
-                        </div>
-                        <form class="profile-form">
-                            <div class="label">
-                                країна знаходження
-                            </div>
-                            <div class="dropdown">
-                                <div class="select">
-                                    <input type="hidden" value="country" name="country">
-                                    <div class="selected">
-                                        <div>країна </div>
-                                    </div>
-                                    <div class="arrow"><img src="assets/img/down-arrow.svg"></div>
-                                </div>
-                                <ul class="menu select-give-currency">
-                                    <li>
-                                        <div>Україна </div>
-                                    </li>
-                                    <li>
-                                        <div>Польша</div>
-                                    </li>
-                                    <li>
-                                        <div>Чехія</div>
-                                    </li>
-                                    <li>
-                                        <div>Румунія</div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="label">
-                                особиста інформація
-                            </div>
-                            <input type="text" name="name" id="name" placeholder="ім'я">
-                            <input type="text" name="last-name" id="last-name" placeholder="прізвище">
-                            <input type="text" name="patronymic" id="patronymic" placeholder="по батькові">
-                            <input type="date" id="data-birth" name="data-birth" value="" min="1900-01-01" max="2005-01-01">
-                            <div class="label no-border">
-                                стать
-                            </div>
-                            <div class="gender-radio">
-                                <div>
-                                    <input type="radio" id="man" name="gender" checked>
-                                    <label for="man">Чоловік</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="woman" name="gender">
-                                    <label for="woman">Жінка</label>
-                                </div>
-                            </div>
-
-                            <div class="label">
-                                адреса проживання
-                            </div>
-                            <div class="dropdown">
-                                <div class="select">
-                                    <input type="hidden" value="country" name="country">
-                                    <div class="selected">
-                                        <div>місто </div>
-                                    </div>
-                                    <div class="arrow"><img src="assets/img/down-arrow.svg"></div>
-                                </div>
-                                <ul class="menu select-give-currency">
-                                    <li>
-                                        <div>Херсон </div>
-                                    </li>
-                                    <li>
-                                        <div>Київ</div>
-                                    </li>
-                                    <li>
-                                        <div>Севастополь</div>
-                                    </li>
-                                    <li>
-                                        <div>Одеса</div>
-                                    </li>
-                                    <li>
-                                        <div>Львів</div>
-                                    </li>
-                                    <li>
-                                        <div>Миколаїв</div>
-                                    </li>
-                                    <li>
-                                        <div>Запоріжжя</div>
-                                    </li>
-                                    <li>
-                                        <div>Доецьк</div>
-                                    </li>
-                                    <li>
-                                        <div>Луцьк</div>
-                                    </li>
-                                    <li>
-                                        <div>Полтава</div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <input type="text" name="street" id="street" placeholder="вулиця">
-                            <div class="adress">
-                                <input type="number" name="street" id="street" placeholder="будинок">
-                                <input type="number" name="street" id="street" placeholder="квартира">
-                                <input type="number" name="street" id="street" placeholder="індекс">
-                            </div>
-                            <div class="label">
-                                підтвердження особистості
-                            </div>
-
-                            <div class="label no-border">
-                                тип документу
-                            </div>
-                            <div class="document-btns">
-                                <div class="document-button">паспорт</div>
-                                <div class="document-button">закордонний паспорт</div>
-                                <div class="document-button">ID-картка</div>
-                                <div class="document-button">посвідчення водія</div>
-                            </div>
-
-                            <div class="label no-border">
-                                завантажте документ
-                            </div>
-                            <label class="uploadFile">
-                                <span class="filename">перша сторінка</span>
-                                <p id="sendfile">перетягніть сюди або <span>оберіть файл</span> </p>
-                                <input type="file" class="inputfile form-control" name="files" multiple>
-                            </label>
-                            <div>
-                                <div class="check-box_block">
-                                    <span>немає терміну дії</span>
-                                    <span class="check-box-subtitle">за умови відсутності терміну дії</span>
-                                    <input data-index="1" id="no-doc-data" class="no-doc-data" name="no-doc-data" type="checkbox" />
-                                    <label for="no-doc-data"></label>
-                                </div>
-                            </div>
-                            <input type="date" id="data-doc" name="data-doc" value="" min="1900-01-01" max="2023-12-31" placeholder="термін дії документу">
-                            <button class="btn btn-primary">продовжити</button>
-                        </form>
-
+                    </div>
+                    <div class="banner-img">
+                        <img src="assets/img/error.png" alt="">
                     </div>
                 </div>
             </div>

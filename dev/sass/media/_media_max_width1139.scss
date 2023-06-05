@@ -206,11 +206,14 @@
     }
 
     //profile//
-    aside {
-        display: none;
-    }
-
-    .personal-info {
-        margin: auto;
+    .profile {
+        margin-top: 20px;
+        aside {
+            display: none;
+        }
+    
+        .personal-info {
+            margin: auto;
+        }
     }
 }

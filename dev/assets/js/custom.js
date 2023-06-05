@@ -261,12 +261,11 @@ const docDataBox = document.querySelector('#data-doc');
 if(docCheckBox) {
     docCheckBox.addEventListener('click', () => {
         if(docCheckBox.checked) {
-            docDataBox.style.display = 'none';
+            docDataBox.parentElement.style.display = 'none';
         } else {
-            docDataBox.style.display = 'flex';
+            docDataBox.parentElement.style.display = 'flex';
         }
     });
 
 }
-
 

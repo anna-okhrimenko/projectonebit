@@ -9,7 +9,9 @@
         background: #141810;
         border-radius: 8px;
         object-fit: cover;
+        transition: .3s;
         &:hover {
+            transition: .3s;
             transform: scale(1.3);
         } 
         img {

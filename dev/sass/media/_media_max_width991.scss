@@ -251,6 +251,21 @@
             }
         }
     }
+
+    //profile//
+    .profile {
+        .profile-form {
+            .tips {
+                flex-wrap: wrap;
+            }
+        }
+
+        .personal-info .profile-form .document-btns {
+            display: grid;
+            grid: repeat(2, calc(50% - 8px)) / repeat(2, calc(50% - 8px));
+            gap: 16px;
+        }
+    }
 }
 
 

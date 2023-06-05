@@ -34,6 +34,8 @@
         color: $sub-text;
     }
 
+    
+
     .accord-btn {
         border: none;
         cursor: pointer;
@@ -61,9 +63,24 @@
             right: 0;
             top: 50%;
             width: 27px;
+            transition: all 0.2s ease-in-out;
         }
     }
     &.active .accord-btn:before {
         transform: rotate(0deg);
     }
+    
+    &:hover .accord-btn::before {
+        transform: rotate(0);
+    }
+    &:hover .accord-btn::after {
+        transform: rotate(90deg);
+    }
+    &.active:hover .accord-btn::after {
+        transform: rotate(0);
+    }
+    &.active:hover .accord-btn::before {
+        transform: rotate(0);
+    }
+    
 }
