@@ -86,7 +86,30 @@
             top: 0;
             opacity: 1;
             transform: scale(1);
-            
+            animation-name: hover-city;
+            animation-duration: 10s;
+            animation-delay: 1.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes hover-city {
+            0% {
+                background-position-y: 100%;
+                background-position-y: top;
+            }
+            5% {
+                background-position-y: 100%;
+                background-position-y: top;
+            }
+            40% {
+                background-position-y: bottom;
+            }
+            50% {
+                background-position-y: bottom;
+            }
+            100% {
+                background-position-y: top;
+            }
         }
 
     }

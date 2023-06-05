@@ -36,6 +36,7 @@ $(document).ready(function () {
     });
 
     $('#data-birth, #data-doc').Zebra_DatePicker();
+
 });
 
 
