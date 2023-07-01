@@ -3,6 +3,7 @@ $(document).ready(function () {
         dots: true,
         arrows: false,
         speed: 800,
+        fade: true,
         responsive: [
             {
               breakpoint: 1140,

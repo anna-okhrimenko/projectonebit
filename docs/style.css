@@ -18,6 +18,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
   box-sizing: border-box;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]:focus-visible {
+  outline: none;
+}
+
 body {
   background: #080807;
   font-family: "Geometria";
@@ -582,17 +593,6 @@ header .profile-mobile_modal .modal-body .header-nav_list {
   font-size: 24px;
   line-height: 30px;
   border: none;
-  -moz-appearance: textfield;
-}
-.slider-item .currency .form-block_give input[type=number]::-webkit-outer-spin-button, .slider-item .currency .form-block_give input[type=number]::-webkit-inner-spin-button,
-.slider-item .currency .form-block_getit input[type=number]::-webkit-outer-spin-button,
-.slider-item .currency .form-block_getit input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-.slider-item .currency .form-block_give input[type=number]:focus-visible,
-.slider-item .currency .form-block_getit input[type=number]:focus-visible {
-  outline: none;
 }
 .slider .slick-dots {
   display: flex;

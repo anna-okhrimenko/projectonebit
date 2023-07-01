@@ -139,18 +139,7 @@
                     font-size: 24px;
                     line-height: 30px;
                     border: none;
-                    -moz-appearance: textfield;
-
-                    &::-webkit-outer-spin-button,
-                    &::-webkit-inner-spin-button {
-                        -webkit-appearance: none;
-                        margin: 0;
-                    }
-
-                    &:focus-visible {
-                        outline: none;
-                    }
-
+                    
                 }
 
                 
