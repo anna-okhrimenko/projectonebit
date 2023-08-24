@@ -616,6 +616,7 @@ header .profile-mobile_modal .modal-body .header-nav_list {
   color: transparent;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .advantages-block .first-block,
